@@ -1,0 +1,3985 @@
+{
+	"version": "2",
+	"project_settings": {
+		"name": "GlobalGameJam",
+		"default_world": "GlobalGameJam",
+		"editor_version": "editor_app",
+		"engine_binaries": "development",
+		"launcher_gui": 0,
+		"component_system": 0,
+		"launcher_console": 1,
+		"runtimes_generator": 0,
+		"build_tool": 0,
+		"bin_flags": 6,
+		"precision": 0,
+		"precision_forced": "0",
+		"project_template": "empty-dnc",
+		"api": "csdnc",
+		"stereo": "",
+		"monitors": "",
+		"sound": "auto",
+		"plugins": [
+			"FbxImporter",
+			"GLTFImporter",
+			"FbxExporter"
+		],
+		"addons": [
+		],
+		"files": [
+			{
+				"file": ".vscode/",
+				"tags": [
+					"project_sources"
+				],
+				"hash": ""
+			},
+			{
+				"file": ".vscode/launch.json",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023121387"
+			},
+			{
+				"file": ".vscode/settings.json",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1611702312480"
+			},
+			{
+				"file": ".vscode/tasks.json",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023121247"
+			},
+			{
+				"file": "GlobalGameJam.csproj",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023123128"
+			},
+			{
+				"file": "GlobalGameJam.sln",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023121053"
+			},
+			{
+				"file": "Properties/",
+				"tags": [
+					"project_sources"
+				],
+				"hash": ""
+			},
+			{
+				"file": "Properties/launchSettings.json",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1611702312171"
+			},
+			{
+				"file": "bin/",
+				"tags": [
+					"unigine",
+					"binaries",
+					"plugins",
+					"unigine_utils"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/ApplicationLauncher_x64.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831121792"
+			},
+			{
+				"file": "bin/ApplicationLauncher_x64d.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831398784"
+			},
+			{
+				"file": "bin/EditorCore_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228314401536"
+			},
+			{
+				"file": "bin/EditorCore_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228320754944"
+			},
+			{
+				"file": "bin/EditorCore_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283129634304"
+			},
+			{
+				"file": "bin/Editor_x64.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022834304096"
+			},
+			{
+				"file": "bin/Editor_x64d.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022835722336"
+			},
+			{
+				"file": "bin/Editor_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228323490560"
+			},
+			{
+				"file": "bin/FbxExporter_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "16117022837665152"
+			},
+			{
+				"file": "bin/FbxExporter_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "161170228310374656"
+			},
+			{
+				"file": "bin/FbxExporter_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "161170228311448320"
+			},
+			{
+				"file": "bin/FbxImporter_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "16117022837931904"
+			},
+			{
+				"file": "bin/FbxImporter_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "161170228310803712"
+			},
+			{
+				"file": "bin/FbxImporter_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "161170228313307904"
+			},
+			{
+				"file": "bin/GLTFImporter_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "1611702283628224"
+			},
+			{
+				"file": "bin/GLTFImporter_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "16117022831120768"
+			},
+			{
+				"file": "bin/GLTFImporter_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "16117022836066176"
+			},
+			{
+				"file": "bin/Qt5Concurrent.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228328672"
+			},
+			{
+				"file": "bin/Qt5Core.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022836105088"
+			},
+			{
+				"file": "bin/Qt5Gui.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022836464000"
+			},
+			{
+				"file": "bin/Qt5Network.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831301504"
+			},
+			{
+				"file": "bin/Qt5Widgets.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022835530624"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64.deps.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283452"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022832263552"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283834824"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64.xml",
+				"tags": [
+					"unigine_utils"
+				],
+				"hash": "16117023124284000"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64d.deps.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283455"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022832491904"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831147756"
+			},
+			{
+				"file": "bin/UnigineSharpCore_x64d.xml",
+				"tags": [
+					"unigine_utils"
+				],
+				"hash": "16117023124284000"
+			},
+			{
+				"file": "bin/UnigineWrapper_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022832785792"
+			},
+			{
+				"file": "bin/UnigineWrapper_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022834539392"
+			},
+			{
+				"file": "bin/UnigineWrapper_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228320525056"
+			},
+			{
+				"file": "bin/Unigine_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228234581504"
+			},
+			{
+				"file": "bin/Unigine_x64.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283154095616"
+			},
+			{
+				"file": "bin/Unigine_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228342318336"
+			},
+			{
+				"file": "bin/Unigine_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283176689152"
+			},
+			{
+				"file": "bin/cspropgen_core_x64.deps.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283873"
+			},
+			{
+				"file": "bin/cspropgen_core_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022837168"
+			},
+			{
+				"file": "bin/cspropgen_core_x64.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831524"
+			},
+			{
+				"file": "bin/cspropgen_core_x64.runtimeconfig.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283154"
+			},
+			{
+				"file": "bin/cspropgen_core_x64d.deps.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283880"
+			},
+			{
+				"file": "bin/cspropgen_core_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022837680"
+			},
+			{
+				"file": "bin/cspropgen_core_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831820"
+			},
+			{
+				"file": "bin/cspropgen_core_x64d.runtimeconfig.json",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283154"
+			},
+			{
+				"file": "bin/d3dcompiler_47.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022834524480"
+			},
+			{
+				"file": "bin/imageformats/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/imageformats/qgif.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228332768"
+			},
+			{
+				"file": "bin/msvcp140.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283633152"
+			},
+			{
+				"file": "bin/openal32.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283891904"
+			},
+			{
+				"file": "bin/platforms/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/platforms/qwindows.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "16117022831446400"
+			},
+			{
+				"file": "bin/styles/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/styles/qwindowsvistastyle.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1611702283136192"
+			},
+			{
+				"file": "bin/vcruntime140.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "161170228387888"
+			},
+			{
+				"file": "data/",
+				"tags": [
+					"unigine",
+					"unigine_data",
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/00/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/00/00eb950dc0cf1a9ab100b1f5e79151dea10d5709.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305673"
+			},
+			{
+				"file": "data/.cache_textures/05/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/05/05462bf386517bdde2ee432e50c888cd653f1f42.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230575"
+			},
+			{
+				"file": "data/.cache_textures/0c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/0c/0c40ae1197df44f7194b7837ee3355747b159bbd.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305507"
+			},
+			{
+				"file": "data/.cache_textures/0c/0c5c7dca62e0f075bc7497f81bdfe9aec6b2ee1b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305916"
+			},
+			{
+				"file": "data/.cache_textures/13/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/13/13a5cfbdb0fa29542b384848c12daf762fe10b84.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305142"
+			},
+			{
+				"file": "data/.cache_textures/15/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/15/15ac98fe768235314d23277fd9b642e5c377115b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305568"
+			},
+			{
+				"file": "data/.cache_textures/1d/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/1d/1d69d10b4e2bf2ee70b31d7533b1105000bca76f.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230565856"
+			},
+			{
+				"file": "data/.cache_textures/20/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/20/200386361225d7765ece91fb69d383014d0d2029.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023053580"
+			},
+			{
+				"file": "data/.cache_textures/20/209223525dca69a0fcb0beb5731582b5f90f17cf.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305549"
+			},
+			{
+				"file": "data/.cache_textures/26/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/26/26da2af870934f62e8d8e6cc83d390c8cd94abbd.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023052104"
+			},
+			{
+				"file": "data/.cache_textures/26/26e4f4d3f5aea60d340d85f378bda7b69066ba25.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/27/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/27/273a674fad0cb1658ca1d293b73e48e3f6e629bd.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305545"
+			},
+			{
+				"file": "data/.cache_textures/29/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/29/2997e40822c8b7c7ec48927a7464ff91588cb3bc.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305408"
+			},
+			{
+				"file": "data/.cache_textures/2a/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/2a/2a1fd85054ccff517ff8c967525de5aff0056bb4.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305138"
+			},
+			{
+				"file": "data/.cache_textures/2a/2a3d6d41edb8ac91336265af489c891e9d772658.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305508"
+			},
+			{
+				"file": "data/.cache_textures/2b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/2b/2ba3d92b408d6b164bcb300f790cae75cbea4cf5.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/2f/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/2f/2f607805cca409a0ed39307fce1003d27446d109.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230565856"
+			},
+			{
+				"file": "data/.cache_textures/2f/2ff69e549c1d5f93de6de3a7528f8b008a418dac.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023051488"
+			},
+			{
+				"file": "data/.cache_textures/30/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/30/3029b50b55b2d3e5d7ae2c4536836c220955b5b4.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305964"
+			},
+			{
+				"file": "data/.cache_textures/32/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/32/32e9a2dce08f292cedf2dc9d208b019f27a586a0.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305855"
+			},
+			{
+				"file": "data/.cache_textures/34/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/34/34175fbd86edd102ab7fa17f701053b9a36c8ed6.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305540"
+			},
+			{
+				"file": "data/.cache_textures/35/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/35/35d987f84c0681c9b575fd13edfc11a03cf1a3bb.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305267"
+			},
+			{
+				"file": "data/.cache_textures/3a/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/3a/3ac02fc875c310878d1b943add8e9651fa79db7c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023051464"
+			},
+			{
+				"file": "data/.cache_textures/3c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/3c/3c39486f310adb027070de79a49f75849b3e8313.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230565856"
+			},
+			{
+				"file": "data/.cache_textures/42/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/42/4227c53bb3cc795eb05a9125737a1040525b469f.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/43/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/43/434ab133edf4b06c916e3d36bd646d04746da384.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305142"
+			},
+			{
+				"file": "data/.cache_textures/48/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/48/4897ab70a5ce5fa42d8d1df686477d56fad5a162.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305941"
+			},
+			{
+				"file": "data/.cache_textures/4a/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/4a/4a4d3bb3387c2e545b0d91fedc839111e5c21a91.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023051068"
+			},
+			{
+				"file": "data/.cache_textures/4c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/4c/4c773a07e2054239168a5187d0ed71ad10db3c99.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305694"
+			},
+			{
+				"file": "data/.cache_textures/4e/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/4e/4e584ab73b2bfc61c1657232231db852679f097d.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305559"
+			},
+			{
+				"file": "data/.cache_textures/50/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/50/50a7dd9a9b6318b66a187b5f53e555c46990f05f.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305752"
+			},
+			{
+				"file": "data/.cache_textures/52/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/52/5219d6ddb5dbd1520e843a369ad2b64326bb24e2.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305564"
+			},
+			{
+				"file": "data/.cache_textures/52/52f38ec6b14bcb981ade156a36d1b7e739f7412c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/53/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/53/5350f4d903a2f858ef22d23ec214d24e9eefa46c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/5b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/5b/5b29a40c7a150ffb6361c51e7cdde9e5d6421200.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305329"
+			},
+			{
+				"file": "data/.cache_textures/5c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/5c/5c4cccedf7d047b63b9f6ff8e17f4d46bc703f86.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305788"
+			},
+			{
+				"file": "data/.cache_textures/5c/5c850013a9101fad1758f061d105f588dd1cdb70.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023051637"
+			},
+			{
+				"file": "data/.cache_textures/5f/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/5f/5f5d9f2b1839b7c2abacd82f80f1710029c92dd1.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305546"
+			},
+			{
+				"file": "data/.cache_textures/5f/5f88b453b0694618fda82a50f745114ae4f4f2e4.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/60/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/60/608a8dc4c5a4b83bf534a24c501b2190f73fd599.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023051021"
+			},
+			{
+				"file": "data/.cache_textures/61/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/61/61b0b59df82cb279bd434ebf41e02e1eaed10c19.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230516440"
+			},
+			{
+				"file": "data/.cache_textures/68/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/68/687d64ea30955f5fb0cc46f68dfc256299f8d1b9.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023054218"
+			},
+			{
+				"file": "data/.cache_textures/68/68ec9d54345668a38a6e35a66a9dd0cdeba93bc8.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305315"
+			},
+			{
+				"file": "data/.cache_textures/69/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/69/692dbb7d56d633e22551bd47f4d92cd2d498270d.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305508"
+			},
+			{
+				"file": "data/.cache_textures/6d/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/6d/6d057be675fe9fc6e79842ed26dcc7ac341c6002.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305252"
+			},
+			{
+				"file": "data/.cache_textures/6e/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/6e/6e91f2d2b719f409b4dcedd4ac1d7f2325015a26.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/71/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/71/71072b09cfdc22269143e05fa57467d2458d3acf.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230516440"
+			},
+			{
+				"file": "data/.cache_textures/78/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/78/785ff6e3b3917f985156fc0cd582f4691362cd9e.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305765"
+			},
+			{
+				"file": "data/.cache_textures/7b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/7b/7b6393ce9c7f88d55c3ac4307e4609cf831cece2.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230565137"
+			},
+			{
+				"file": "data/.cache_textures/7f/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/7f/7f007b6ade028423fffa18e4fec82097418ea60c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305137"
+			},
+			{
+				"file": "data/.cache_textures/7f/7f47c8d6e46f8545705795d5e35b65c3651356ff.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023052104"
+			},
+			{
+				"file": "data/.cache_textures/7f/7f881940897e7e9f6361d580766b1acbf205ca86.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305792"
+			},
+			{
+				"file": "data/.cache_textures/82/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/82/82fb4683e414ba063e30c9ad87291f2886d77867.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306792"
+			},
+			{
+				"file": "data/.cache_textures/83/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/83/837fb41b70ad8a04bbceacfcea1b2bc1698b4eaf.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306801"
+			},
+			{
+				"file": "data/.cache_textures/84/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/84/84543662d1f2c25999e347e4a0e271f3c2108eb6.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306329"
+			},
+			{
+				"file": "data/.cache_textures/85/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/85/85edcbcfb81c7b4819c7ff656aa0aa4222abf0f7.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306696"
+			},
+			{
+				"file": "data/.cache_textures/88/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/88/8822874216026cc7b2b61784d36abee999508e06.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306440"
+			},
+			{
+				"file": "data/.cache_textures/8b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/8b/8baa0631703930d425599a934979dc1b77548c3c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061488"
+			},
+			{
+				"file": "data/.cache_textures/8c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/8c/8c0b4e6ac34641b7d50ab4b9e3bb6615bc37ba51.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306781"
+			},
+			{
+				"file": "data/.cache_textures/8e/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/8e/8e31d3f3022488b64088689d145fd158e44da4d7.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665726"
+			},
+			{
+				"file": "data/.cache_textures/90/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/90/9073faae5cb638004eef27ecfd0e7001583bfb5c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306749"
+			},
+			{
+				"file": "data/.cache_textures/91/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/91/9154446becf4434fcabf82177bb1532fd0124fad.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230613017"
+			},
+			{
+				"file": "data/.cache_textures/96/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/96/9632876d2b9fee295c00eb4edde19b7aa44d9966.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061463"
+			},
+			{
+				"file": "data/.cache_textures/9b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/9b/9baa3e95ea88cd4a62620bb25d2a6b08ad8e9655.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306158"
+			},
+			{
+				"file": "data/.cache_textures/9f/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/9f/9f2f4594005da4e941a5d275268a8ebdea663b79.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306528"
+			},
+			{
+				"file": "data/.cache_textures/a5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/a5/a543adc9eb319e3f88d3ef80a6cdfa10390cd26b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306138"
+			},
+			{
+				"file": "data/.cache_textures/a6/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/a6/a69f6434c9cb8bfe9fe0cd8af20df6dfd2d0b756.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306189"
+			},
+			{
+				"file": "data/.cache_textures/a8/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/a8/a8106e01d8743fe2b0601f5d30c9eaf6cee2a4ca.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306397"
+			},
+			{
+				"file": "data/.cache_textures/ac/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ac/ac1a3a438bd1e86b966d072a9f16e2703460be21.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306537"
+			},
+			{
+				"file": "data/.cache_textures/ac/ac61500693d867ad17a02528df46c6672623109a.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306287"
+			},
+			{
+				"file": "data/.cache_textures/b0/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/b0/b0d94d3515b2e88572861ff7cd6966471dc4a90f.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306369"
+			},
+			{
+				"file": "data/.cache_textures/b1/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/b1/b1114d0c046f1d7c4df1a44ae88c8ae95e69e3e0.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306152"
+			},
+			{
+				"file": "data/.cache_textures/b3/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/b3/b3db7f8b07c4a9f1746a7d5ac3937fadafd3c0c5.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306462"
+			},
+			{
+				"file": "data/.cache_textures/b5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/b5/b54a67af925478f0947c2fcb4682cc89f2df454e.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061066"
+			},
+			{
+				"file": "data/.cache_textures/b6/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/b6/b6674b045b8932059769ee326a8eb293037aeb19.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306984"
+			},
+			{
+				"file": "data/.cache_textures/ba/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ba/badef8fb7418499586d25da29dc3964803904f74.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306568"
+			},
+			{
+				"file": "data/.cache_textures/c3/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/c3/c3b643ae67a5b7356b055f101825272f1785aac2.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/c6/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/c6/c62764d2f4c2320e40f2cea92bc20b77baca1d27.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061488"
+			},
+			{
+				"file": "data/.cache_textures/cb/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/cb/cb3dbb4e699ac80e4405d1d1cfe838e8a6819c5e.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306208"
+			},
+			{
+				"file": "data/.cache_textures/cc/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/cc/cc9700e0e0533ebfec503d122b993949182af214.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/cd/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/cd/cd518d3796c6bd6e996a25f695bace323b8f2b69.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306326"
+			},
+			{
+				"file": "data/.cache_textures/ce/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ce/ce1aa1606a9db211bdc08b918cd68e08db5c47c8.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306792"
+			},
+			{
+				"file": "data/.cache_textures/ce/ced8a56035b3993f7cc3d59274baf7c9db489e94.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306741"
+			},
+			{
+				"file": "data/.cache_textures/cf/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/cf/cf2ba2910494fabc504296eb94e53f4e51ea3e55.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665460"
+			},
+			{
+				"file": "data/.cache_textures/d0/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/d0/d076fbb0cef1db4f86cf9062e212545941a9b1e4.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/d1/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/d1/d12281c346ee3c46a561e6ed318f1b6872c6c7a7.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/d1/d15782a509aae84ba85cebcb4e69571f60a7e33a.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306383"
+			},
+			{
+				"file": "data/.cache_textures/d1/d17296c8a69640d3c44a515c2a7ad5634ecc1b60.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306783"
+			},
+			{
+				"file": "data/.cache_textures/d7/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/d7/d798cb1e62ee2d61a673b602b3fd94acc56b564b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306162"
+			},
+			{
+				"file": "data/.cache_textures/d7/d7c2274d6378a0480073c707d34bd8ba59cd10d1.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/d9/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/d9/d983788c941772c5901b50b086a133504411be43.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306779"
+			},
+			{
+				"file": "data/.cache_textures/df/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/df/df7a5f2766dedfe11a5f2a91917ef4deff3baa5b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023065997"
+			},
+			{
+				"file": "data/.cache_textures/e0/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e0/e038d46e26ad35b1e7775c22e5377971790cb075.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306504"
+			},
+			{
+				"file": "data/.cache_textures/e0/e06c2f545bfcd2a3361d97a69591cacdb9a8edc8.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306749"
+			},
+			{
+				"file": "data/.cache_textures/e1/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e1/e16a40067ebd143a160fc69c08ebefc6cda4d53c.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306792"
+			},
+			{
+				"file": "data/.cache_textures/e2/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e2/e237a1333473ddcc4729b8cfa3bee53e75991b77.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306521"
+			},
+			{
+				"file": "data/.cache_textures/e3/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e3/e3120f350170783531c278607a4b366265cfbfc9.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306534"
+			},
+			{
+				"file": "data/.cache_textures/e4/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e4/e4d299078df70a69aaadd12d2f969ba2c5250f8f.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306268"
+			},
+			{
+				"file": "data/.cache_textures/e5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e5/e538f959ed5e12e49e00c0f3671491b6e54edd9d.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306324"
+			},
+			{
+				"file": "data/.cache_textures/e7/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e7/e7653bca291f78a1a4d1398c96a8a77b70bd769e.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/e8/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e8/e8772a2688ce8129905b279f10968623a5ddaca7.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306704"
+			},
+			{
+				"file": "data/.cache_textures/e9/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/e9/e996fd971d20ec4b4a1b21e0959c8e3e52acce9b.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023062213"
+			},
+			{
+				"file": "data/.cache_textures/ea/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ea/ea515587c4fe8099a29d8c3fa333da5f7678de31.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306389"
+			},
+			{
+				"file": "data/.cache_textures/ea/eaec529764164f0aed08f2e18ea1eecc51b95bbb.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023066680"
+			},
+			{
+				"file": "data/.cache_textures/ea/eaf146692cfe5cb4ebdd6083d7ec0c066ccbf3ad.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/ec/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ec/ecb0316c489e7ddb5d03997e6213f2c5df69c560.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230622611"
+			},
+			{
+				"file": "data/.cache_textures/ed/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ed/edf5dbe16c25c3185d9ce7b15e99469442484856.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306735"
+			},
+			{
+				"file": "data/.cache_textures/ef/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/ef/ef22c5ac89c1851b55ee77be4ecebc05f8557da0.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230617545"
+			},
+			{
+				"file": "data/.cache_textures/f0/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/f0/f0cb51ed798b8a6885d26aa748ebe7da93149571.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/f2/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/f2/f2211973347c1036ea774a1de8da44d8c00a8257.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665425"
+			},
+			{
+				"file": "data/.cache_textures/f2/f225c61ccb2a78ee75153c32ff600758eeffa623.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061349"
+			},
+			{
+				"file": "data/.cache_textures/f3/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/f3/f3ac6051b2791d7c6f70daab36fd300e99cdf815.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230665856"
+			},
+			{
+				"file": "data/.cache_textures/f4/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/f4/f4ee40b8c4ae8bbefa997d03d00b5341ea459b28.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023062951"
+			},
+			{
+				"file": "data/.cache_textures/f8/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/f8/f8901e1d389508d85a9e765788209fcac07b8ca1.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306746"
+			},
+			{
+				"file": "data/.cache_textures/fd/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/fd/fdbbaa2c83101f9b66fb503e6f38ba85b39e6a20.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306332"
+			},
+			{
+				"file": "data/.cache_textures/fd/fdce52252458c90169b884999ed107ed4f612ffe.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023061212"
+			},
+			{
+				"file": "data/.cache_textures/fe/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.cache_textures/fe/fecf2f1252778349dcf0b414f25c1063d34e3a66.texture",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306792"
+			},
+			{
+				"file": "data/.runtimes/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/0d/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/0d/0d6abf6a2478e7c1e4c29e2cd7a2839bca42643e.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306244"
+			},
+			{
+				"file": "data/.runtimes/0d/0d6abf6a2478e7c1e4c29e2cd7a2839bca42643e.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306120"
+			},
+			{
+				"file": "data/.runtimes/13/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/13/13c13655873193b046fb934f769de862de9ccc59.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306490"
+			},
+			{
+				"file": "data/.runtimes/13/13c13655873193b046fb934f769de862de9ccc59.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306120"
+			},
+			{
+				"file": "data/.runtimes/17/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/17/17fbfb8c6b20817b45af889e0e35d76571da2180.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306490"
+			},
+			{
+				"file": "data/.runtimes/17/17fbfb8c6b20817b45af889e0e35d76571da2180.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306120"
+			},
+			{
+				"file": "data/.runtimes/27/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/27/27917a872cd2f63a9cea9051c1c18d7c02be8aab.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306571"
+			},
+			{
+				"file": "data/.runtimes/27/27917a872cd2f63a9cea9051c1c18d7c02be8aab.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306119"
+			},
+			{
+				"file": "data/.runtimes/29/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/29/2997e40822c8b7c7ec48927a7464ff91588cb3bc.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230687536"
+			},
+			{
+				"file": "data/.runtimes/29/2997e40822c8b7c7ec48927a7464ff91588cb3bc.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702306122"
+			},
+			{
+				"file": "data/.runtimes/3a/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/3a/3ac02fc875c310878d1b943add8e9651fa79db7c.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230722369776"
+			},
+			{
+				"file": "data/.runtimes/3a/3ac02fc875c310878d1b943add8e9651fa79db7c.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307128"
+			},
+			{
+				"file": "data/.runtimes/42/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/42/4227c53bb3cc795eb05a9125737a1040525b469f.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230711184952"
+			},
+			{
+				"file": "data/.runtimes/42/4227c53bb3cc795eb05a9125737a1040525b469f.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307128"
+			},
+			{
+				"file": "data/.runtimes/49/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/49/498e07c151953e2cea14a39b52ce043ef0a3de85.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307893"
+			},
+			{
+				"file": "data/.runtimes/49/498e07c151953e2cea14a39b52ce043ef0a3de85.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307127"
+			},
+			{
+				"file": "data/.runtimes/4d/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/4d/4d4169f591e5f2d0fa2b27ef08e03482256f69f9.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307574"
+			},
+			{
+				"file": "data/.runtimes/4d/4d4169f591e5f2d0fa2b27ef08e03482256f69f9.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307118"
+			},
+			{
+				"file": "data/.runtimes/5b/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/5b/5b29a40c7a150ffb6361c51e7cdde9e5d6421200.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230743832"
+			},
+			{
+				"file": "data/.runtimes/5b/5b29a40c7a150ffb6361c51e7cdde9e5d6421200.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307128"
+			},
+			{
+				"file": "data/.runtimes/5c/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/5c/5c4cccedf7d047b63b9f6ff8e17f4d46bc703f86.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023071398256"
+			},
+			{
+				"file": "data/.runtimes/5c/5c4cccedf7d047b63b9f6ff8e17f4d46bc703f86.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307123"
+			},
+			{
+				"file": "data/.runtimes/62/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/62/6251a407c69e11ba08aff5d1cab8b4fccc888c2b.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023071796"
+			},
+			{
+				"file": "data/.runtimes/62/6251a407c69e11ba08aff5d1cab8b4fccc888c2b.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307122"
+			},
+			{
+				"file": "data/.runtimes/65/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/65/65ebfad4ee0f2823489cef26ce663c4d572bb148.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307662"
+			},
+			{
+				"file": "data/.runtimes/65/65ebfad4ee0f2823489cef26ce663c4d572bb148.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307122"
+			},
+			{
+				"file": "data/.runtimes/68/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/68/68ec9d54345668a38a6e35a66a9dd0cdeba93bc8.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307262271"
+			},
+			{
+				"file": "data/.runtimes/68/68ec9d54345668a38a6e35a66a9dd0cdeba93bc8.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307121"
+			},
+			{
+				"file": "data/.runtimes/6e/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/6e/6e10090b18eccaeeaa8e15759a9fa850236a5f6f.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307245"
+			},
+			{
+				"file": "data/.runtimes/6e/6e10090b18eccaeeaa8e15759a9fa850236a5f6f.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307119"
+			},
+			{
+				"file": "data/.runtimes/6e/6e91f2d2b719f409b4dcedd4ac1d7f2325015a26.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307699192"
+			},
+			{
+				"file": "data/.runtimes/6e/6e91f2d2b719f409b4dcedd4ac1d7f2325015a26.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307129"
+			},
+			{
+				"file": "data/.runtimes/74/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/74/7431b7aae1bd03014d53806cf96380db2136c07e.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230730388"
+			},
+			{
+				"file": "data/.runtimes/74/7431b7aae1bd03014d53806cf96380db2136c07e.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307125"
+			},
+			{
+				"file": "data/.runtimes/75/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/75/755ab443f067ccc6cca13d6ddebd7fe88aace227.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307658"
+			},
+			{
+				"file": "data/.runtimes/75/755ab443f067ccc6cca13d6ddebd7fe88aace227.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307120"
+			},
+			{
+				"file": "data/.runtimes/7a/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/7a/7abd3d1dd6399bd8498bed57e699aacada031ba1.prop",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230718689"
+			},
+			{
+				"file": "data/.runtimes/7a/7abd3d1dd6399bd8498bed57e699aacada031ba1.prop.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307135"
+			},
+			{
+				"file": "data/.runtimes/82/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/82/82fb4683e414ba063e30c9ad87291f2886d77867.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230711184952"
+			},
+			{
+				"file": "data/.runtimes/82/82fb4683e414ba063e30c9ad87291f2886d77867.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307129"
+			},
+			{
+				"file": "data/.runtimes/84/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/84/84543662d1f2c25999e347e4a0e271f3c2108eb6.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230743832"
+			},
+			{
+				"file": "data/.runtimes/84/84543662d1f2c25999e347e4a0e271f3c2108eb6.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307129"
+			},
+			{
+				"file": "data/.runtimes/96/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/96/96b89b5d9dcae518765c2597a1d6060a51af3de1.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023072899"
+			},
+			{
+				"file": "data/.runtimes/96/96b89b5d9dcae518765c2597a1d6060a51af3de1.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307127"
+			},
+			{
+				"file": "data/.runtimes/a5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/a5/a5fe62229ac57b19ccf329a4986368b3cead9676.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307582"
+			},
+			{
+				"file": "data/.runtimes/a5/a5fe62229ac57b19ccf329a4986368b3cead9676.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307122"
+			},
+			{
+				"file": "data/.runtimes/ac/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/ac/ac61500693d867ad17a02528df46c6672623109a.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307262271"
+			},
+			{
+				"file": "data/.runtimes/ac/ac61500693d867ad17a02528df46c6672623109a.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702307127"
+			},
+			{
+				"file": "data/.runtimes/ad/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/ad/adac1bcf5877d6e27634e8d90f163c64c263dc73.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023083444"
+			},
+			{
+				"file": "data/.runtimes/ad/adac1bcf5877d6e27634e8d90f163c64c263dc73.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308123"
+			},
+			{
+				"file": "data/.runtimes/b1/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/b1/b16fed1dff6c8bd81cc21d57e77a1aca4208cba1.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308802887"
+			},
+			{
+				"file": "data/.runtimes/b1/b16fed1dff6c8bd81cc21d57e77a1aca4208cba1.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308127"
+			},
+			{
+				"file": "data/.runtimes/b6/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/b6/b6674b045b8932059769ee326a8eb293037aeb19.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023081398256"
+			},
+			{
+				"file": "data/.runtimes/b6/b6674b045b8932059769ee326a8eb293037aeb19.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308119"
+			},
+			{
+				"file": "data/.runtimes/ba/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/ba/bada353cdd958f6b159eddce4afe4ad5abf69e30.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308572"
+			},
+			{
+				"file": "data/.runtimes/ba/bada353cdd958f6b159eddce4afe4ad5abf69e30.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308118"
+			},
+			{
+				"file": "data/.runtimes/c3/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/c3/c3d8866b946f68ce65f759d5bd966130457b02cf.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308659"
+			},
+			{
+				"file": "data/.runtimes/c3/c3d8866b946f68ce65f759d5bd966130457b02cf.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308120"
+			},
+			{
+				"file": "data/.runtimes/d5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/d5/d5d646d363239e16e660be7d15736db807fad5b7.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308577"
+			},
+			{
+				"file": "data/.runtimes/d5/d5d646d363239e16e660be7d15736db807fad5b7.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308120"
+			},
+			{
+				"file": "data/.runtimes/e0/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/e0/e0a18b04956a9a9364ca5ed63f65083d83cdac78.mesh",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308671"
+			},
+			{
+				"file": "data/.runtimes/e0/e0a18b04956a9a9364ca5ed63f65083d83cdac78.mesh.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308123"
+			},
+			{
+				"file": "data/.runtimes/e5/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/e5/e538f959ed5e12e49e00c0f3671491b6e54edd9d.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230843832"
+			},
+			{
+				"file": "data/.runtimes/e5/e538f959ed5e12e49e00c0f3671491b6e54edd9d.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308126"
+			},
+			{
+				"file": "data/.runtimes/f2/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/f2/f225c61ccb2a78ee75153c32ff600758eeffa623.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023081398256"
+			},
+			{
+				"file": "data/.runtimes/f2/f225c61ccb2a78ee75153c32ff600758eeffa623.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308119"
+			},
+			{
+				"file": "data/.runtimes/fd/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/fd/fdbbaa2c83101f9b66fb503e6f38ba85b39e6a20.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230843832"
+			},
+			{
+				"file": "data/.runtimes/fd/fdbbaa2c83101f9b66fb503e6f38ba85b39e6a20.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308123"
+			},
+			{
+				"file": "data/.runtimes/fe/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/.runtimes/fe/feb2bc37c3df6c2ac3fa2d814fdda8ec1b0a8f5b.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308574"
+			},
+			{
+				"file": "data/.runtimes/fe/feb2bc37c3df6c2ac3fa2d814fdda8ec1b0a8f5b.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308120"
+			},
+			{
+				"file": "data/.runtimes/fe/fecf2f1252778349dcf0b414f25c1063d34e3a66.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230811184952"
+			},
+			{
+				"file": "data/.runtimes/fe/fecf2f1252778349dcf0b414f25c1063d34e3a66.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308130"
+			},
+			{
+				"file": "data/GlobalGameJam.world",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702312329367"
+			},
+			{
+				"file": "data/GlobalGameJam.world.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702312551"
+			},
+			{
+				"file": "data/core.ung",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "161170230146781204"
+			},
+			{
+				"file": "data/csharp_components.prop",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305126"
+			},
+			{
+				"file": "data/csharp_components.prop.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305290"
+			},
+			{
+				"file": "data/csharp_template/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/components/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/components/FirstPersonController.cs",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230857653"
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/components/FirstPersonController.cs.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308404"
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/first_person_controller.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308394"
+			},
+			{
+				"file": "data/csharp_template/first_person_controller/first_person_controller.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308301"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308855"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_1.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_1.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_10.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_10.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308858"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_11.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_11.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308858"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_12.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_12.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308858"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_13.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_13.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308858"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_14.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023084194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_14.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702308857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_15.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_15.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309858"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_2.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_2.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_3.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_3.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_4.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_4.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_5.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_5.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_6.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_6.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_7.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_7.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_8.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_8.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309856"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_9.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023094194416"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/env_probes/ep_9.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309857"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_1.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230934795520"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_1.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309855"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_2.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230980146304"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_2.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309855"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_3.dds",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309104436032"
+			},
+			{
+				"file": "data/csharp_template/template_baked_lighting/voxel_probes/vp_3.dds.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309855"
+			},
+			{
+				"file": "data/csharp_template/template_props/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_base_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023091180"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_base_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309291"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_gray_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309253"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_gray_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309291"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_green_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309504"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_green_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309292"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_orange_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309479"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_orange_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309293"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_red_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310476"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/floor_red_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310290"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/glass_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310596"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/glass_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310371"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/wall_0_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310518"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/materials/wall_0_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310286"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/plane.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230917488"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/plane.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023093272"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/ramp_0.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230919168"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/ramp_0.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023093327"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/ramp_1.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230919168"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/ramp_1.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023093327"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/stairs_0.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230921344"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/stairs_0.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023093333"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/wall_0.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230917488"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/fbx/wall_0.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023093274"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/glass.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309605"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/glass.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702309283"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_0_n.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023103076"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_0_n.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310955"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_0_sh.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102354"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_0_sh.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310955"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_gray_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102340"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_gray_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310956"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_green_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102350"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_green_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310964"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_orange_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102349"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_orange_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310965"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_red_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102348"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/floor_red_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310960"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/metal_texture_sh.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023101057516"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/metal_texture_sh.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310967"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/wall_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102340"
+			},
+			{
+				"file": "data/csharp_template/template_props/buildings_constructor/textures/wall_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310944"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/fbx/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/fbx/material_ball.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023101346992"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/fbx/material_ball.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023103302"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/material_ball.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310729"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/material_ball.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310290"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/material_ball.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102920"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/material_ball.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310291"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_a.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023102852500"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_a.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310969"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_alb.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231010793019"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_alb.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310968"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_n.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023108869222"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_n.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310967"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_sh.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023109087252"
+			},
+			{
+				"file": "data/csharp_template/template_props/material_ball/textures/material_ball_sh.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310967"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cone.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023104513"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cone.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310282"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cube.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023101984"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cube.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310282"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cylinder.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310847"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/cylinder.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310286"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cone.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231022624"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cone.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023103272"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cube.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231018576"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cube.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023103272"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cylinder.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231019968"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/cylinder.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023103284"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/sphere.fbx",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231154176"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/fbx/sphere.fbx.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "16117023113278"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cone_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311418"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cone_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311285"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cube_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311447"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cube_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311284"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cylinder_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311451"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/cylinder_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311289"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/sphere_mat.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311338"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/materials/sphere_mat.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311287"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/sphere.node",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310661"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/sphere.node.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702310284"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cone_n.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311214066"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cone_n.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311937"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cube_n.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231121083"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cube_n.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311937"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cylinder_n.png",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231179548"
+			},
+			{
+				"file": "data/csharp_template/template_props/primitives/textures/cylinder_n.png.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311945"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_high.render",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231136266"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_high.render.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311303"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_low.render",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231136218"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_low.render.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311303"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_medium.render",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231136250"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_medium.render.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311306"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_ultra.render",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231136264"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_ultra.render.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311305"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_virtual_reality.render",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170231136236"
+			},
+			{
+				"file": "data/csharp_template/template_render_settings/template_virtual_reality.render.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702311315"
+			},
+			{
+				"file": "data/editor2.ung",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "161170230328406181"
+			},
+			{
+				"file": "data/root_mount.umount",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305102"
+			},
+			{
+				"file": "data/scripts.ung",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "161170230126474"
+			},
+			{
+				"file": "data/shader_d3d11.cache",
+				"tags": [
+					"project_data"
+				],
+				"hash": "161170230515045616"
+			},
+			{
+				"file": "data/shader_gl.cache",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1611702305143951304"
+			},
+			{
+				"file": "launch_debug.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1611702313397"
+			},
+			{
+				"file": "launch_editor.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1611702313414"
+			},
+			{
+				"file": "launch_release.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1611702313396"
+			},
+			{
+				"file": "source/",
+				"tags": [
+					"project_sources"
+				],
+				"hash": ""
+			},
+			{
+				"file": "source/AppEditorLogic.cs",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023121385"
+			},
+			{
+				"file": "source/AppSystemLogic.cs",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1611702312911"
+			},
+			{
+				"file": "source/AppWorldLogic.cs",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "16117023122099"
+			},
+			{
+				"file": "source/main.cs",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1611702312470"
+			}
+		]
+	},
+	"sdk": {
+		"key": "communitybin2.13.0.1windows",
+		"internal_id": "tier0_bin_windows",
+		"products": [
+			"tier0_bin"
+		],
+		"edition": "community",
+		"version": "2.13.0.1",
+		"internal_version": "48",
+		"base_version": "",
+		"timestamp": "202012150434",
+		"type": "bin",
+		"os": "windows",
+		"path": "C:/Users/Firepyro/Unigine SDK Browser/sdks/community_windows_2.13.0.1/",
+		"name": "UNIGINE 2 Community",
+		"resource": "sdk",
+		"size": "1130784950",
+		"uncompressed_size": "3176811935",
+		"activation_types": [
+			"2"
+		]
+	}
+}
