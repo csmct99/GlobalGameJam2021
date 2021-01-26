@@ -1,0 +1,16 @@
+*.vcxproj.user
+*.pro.user
+*.suo
+*.opensdf
+*.VC.opendb
+*.sdf
+*.thumbnails
+
+bin/
+obj/
+junk/
+data/configs/unigine.user
+
+launch_debug.bat
+launch_editor.bat
+launch_release.bat
