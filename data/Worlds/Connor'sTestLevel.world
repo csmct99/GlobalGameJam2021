@@ -486,7 +486,7 @@
 		<render_streaming_upadte_limit>1.5</render_streaming_upadte_limit>
 		<render_streaming_use_memory_limit>1</render_streaming_use_memory_limit>
 		<render_supersampling>1</render_supersampling>
-		<render_taa>1</render_taa>
+		<render_taa>0</render_taa>
 		<render_taa_antialiasing_in_motion>0</render_taa_antialiasing_in_motion>
 		<render_taa_catmull_resampling>1</render_taa_catmull_resampling>
 		<render_taa_diagonal_neighbors>0</render_taa_diagonal_neighbors>
@@ -661,7 +661,7 @@
 			<node type="ObjectMeshStatic" id="1448971353" name="Sprite">
 				<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
 				<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 -7.1525574e-07 4 1.0</transform>
+				<transform>0.65328145 -0.75683486 -0.020598158 0.0 0.65328157 0.54972804 0.52059799 0.0 -0.3826834 -0.35355335 0.85355341 0.0 13 -9.5367432e-07 4 1.0</transform>
 			</node>
 			<node type="ObjectMeshStatic" id="551631223" name="Hitbox">
 				<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
@@ -677,6 +677,11 @@
 				<is_listener>1</is_listener>
 				<controlled>1</controlled>
 				<transform>19.999992 0 0 0.0 0 20.000002 0 0.0 0 0 0.99999994 0.0 -8.3446503e-07 -1.6689301e-06 20 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="914756046" name="Sprite_1">
+				<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
+				<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -15.5 -1.1920929e-06 4 1.0</transform>
 			</node>
 		</node>
 	</editor>
