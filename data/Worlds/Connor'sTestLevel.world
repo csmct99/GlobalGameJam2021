@@ -651,10 +651,33 @@
 				<transform>1.0000002 3.056457e-23 -8.8817715e-16 0.0 0 1.0000012 3.4412739e-08 0.0 8.8817572e-16 -3.4412651e-08 0.99999863 0.0 5.5310855 -2.9544408 4.204565 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="1448971353" name="Plane">
-			<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
-			<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
-			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -11.499999 -3.5000007 3.9999998 1.0</transform>
+		<node type="NodeDummy" id="1302269984" name="Player">
+			<properties>
+				<property parent="a1d8496fcd83e802e2c4877949350a841d351413" guid="a2112a65720f5880c8f971dff33f95b28ab07969">
+					<parameter name="camera">786716219</parameter>
+				</property>
+			</properties>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -19.999998 -3.5000005 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="1448971353" name="Sprite">
+				<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
+				<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 -7.1525574e-07 4 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="551631223" name="Hitbox">
+				<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+				<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="PlayerDummy" id="786716219" name="PlayerDummy">
+				<znear>1</znear>
+				<zfar>20000</zfar>
+				<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+				<is_oblique_frustum>0</is_oblique_frustum>
+				<is_main>1</is_main>
+				<is_listener>1</is_listener>
+				<controlled>1</controlled>
+				<transform>19.999992 0 0 0.0 0 20.000002 0 0.0 0 0 0.99999994 0.0 -8.3446503e-07 -1.6689301e-06 20 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="PlayerController" guid="a1d8496fcd83e802e2c4877949350a841d351413" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="camera" type="node" filter="PlayerDummy"/>
+</property>

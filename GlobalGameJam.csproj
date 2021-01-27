@@ -43,7 +43,9 @@
 			<HintPath>bin\UnigineSharpCore_x64.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-	<ItemGroup/>
+	<ItemGroup>
+		<Compile Include="data/Scripts/Player/PlayerController.cs"/>
+	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
 		<Compile Include="source\AppSystemLogic.cs"/>
