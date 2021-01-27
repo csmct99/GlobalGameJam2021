@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<nodes version="2.13.0.0">
-	<node type="ObjectDummy" id="1546362511" name="first_person_controller">
-		<properties>
-			<property parent="7abd3d1dd6399bd8498bed57e699aacada031ba1" guid="172faa750d32395083a1bc6fc390bf027e157279"/>
-		</properties>
-		<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
-	</node>
-</nodes>
