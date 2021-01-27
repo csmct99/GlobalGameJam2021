@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <material version="2.13.0.0" name="TestMaterial" guid="cf6360a8cd65cbe72367581ad052c8b165e2aa5c" base_material="mesh_base">
+	<options transparent="1"/>
 	<texture name="albedo">guid://6cc48e16f32cee7dc6f1ddb85c0685b790e9a7aa</texture>
 </material>
