@@ -648,8 +648,13 @@
 					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 				</lens_flare_billboards>
-				<transform>-0.43301213 0.43559659 -0.78914928 0.0 -0.75000143 -0.65973973 0.047366548 0.0 -0.49999931 0.61237192 0.6123718 0.0 5.5310855 -2.9544408 4.204565 1.0</transform>
+				<transform>1.0000002 3.056457e-23 -8.8817715e-16 0.0 0 1.0000012 3.4412739e-08 0.0 8.8817572e-16 -3.4412651e-08 0.99999863 0.0 5.5310855 -2.9544408 4.204565 1.0</transform>
 			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1448971353" name="Plane">
+			<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
+			<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -11.499999 -3.5000007 3.9999998 1.0</transform>
 		</node>
 	</editor>
 	<console>
