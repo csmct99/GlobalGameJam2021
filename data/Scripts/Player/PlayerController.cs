@@ -7,7 +7,24 @@ using Unigine;
 public class PlayerController : Component
 {
 
+	[Parameter(Group="Referances")]
 	public PlayerDummy camera;
+
+	[Parameter(Group="Input")]
+	public Input.KEY upInput = Input.KEY.W;
+
+	[Parameter(Group="Input")]
+	public Input.KEY downInput = Input.KEY.W;
+	
+	[Parameter(Group="Input")]
+	public Input.KEY leftInput = Input.KEY.W;
+	
+	[Parameter(Group="Input")]
+	public Input.KEY rightInput = Input.KEY.W;
+
+	[Parameter(Group="Settings")]
+	public float movementSpeed = 10f;
+	
 
 	private void Init()
 	{
@@ -23,9 +40,26 @@ public class PlayerController : Component
 		
 	}
 	
-	private void Update()
-	{
-		// write here code to be called before updating each render frame
-		
+	private void Update() {
+		Movement();
+			
+	}
+
+	private void Movement(){ //Collect 
+		vec3 desiredDirection = vec3.ZERO;
+
+		if(Input.IsKeyPressed(upInput)){
+			desiredDirection += vec3.FORWARD;
+		} else if(Input.IsKeyPressed(downInput)){
+			desiredDirection += vec3.BACK;
+		}
+
+		if(Input.IsKeyPressed(leftInput)){
+			desiredDirection += vec3.LEFT;
+		} else if(Input.IsKeyPressed(rightInput)){
+			desiredDirection += vec3.RIGHT;
+		}
+
+		node.WorldTranslate(desiredDirection.Normalize() * movementSpeed * Game.IFps);
 	}
 }

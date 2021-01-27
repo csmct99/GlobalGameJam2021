@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.13.0.0">
-	<guid>86285755a69440b014ec5c4f7cee1d6252cd7d59</guid>
+	<guid>04e2d9861cb5632da68deaa8278acde7a814721a</guid>
 	<type>mesh</type>
-	<hash>8bd16cab</hash>
+	<hash>3e0d2611</hash>
 	<runtimes>
-		<runtime id="86285755a69440b014ec5c4f7cee1d6252cd7d59" name="plane.mesh" link="0"/>
+		<runtime id="04e2d9861cb5632da68deaa8278acde7a814721a" name="plane.mesh" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="bool" name="unchanged">1</parameter>

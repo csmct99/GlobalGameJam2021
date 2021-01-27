@@ -655,17 +655,25 @@
 			<properties>
 				<property parent="a1d8496fcd83e802e2c4877949350a841d351413" guid="a2112a65720f5880c8f971dff33f95b28ab07969">
 					<parameter name="camera">786716219</parameter>
+					<parameter name="downInput">115</parameter>
+					<parameter name="leftInput">97</parameter>
+					<parameter name="rightInput">100</parameter>
 				</property>
 			</properties>
-			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -19.999998 -3.5000005 0 1.0</transform>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -19.999998 -3.5000005 1 1.0</transform>
 			<node type="ObjectMeshStatic" id="1448971353" name="Sprite">
-				<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
+				<mesh_name>guid://04e2d9861cb5632da68deaa8278acde7a814721a</mesh_name>
 				<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
-				<transform>0.65328145 -0.75683486 -0.020598158 0.0 0.65328157 0.54972804 0.52059799 0.0 -0.3826834 -0.35355335 0.85355341 0.0 13 -9.5367432e-07 4 1.0</transform>
+				<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 0 -1.1920929e-06 1.4999999 1.0</transform>
 			</node>
 			<node type="ObjectMeshStatic" id="551631223" name="Hitbox">
 				<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 				<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+				<body type="BodyRigid" id="1029200732" frozen="0">
+					<shape type="ShapeBox" id="711304884">
+						<size>1 1 1</size>
+					</shape>
+				</body>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
 			<node type="PlayerDummy" id="786716219" name="PlayerDummy">
@@ -676,13 +684,13 @@
 				<is_main>1</is_main>
 				<is_listener>1</is_listener>
 				<controlled>1</controlled>
-				<transform>19.999992 0 0 0.0 0 20.000002 0 0.0 0 0 0.99999994 0.0 -8.3446503e-07 -1.6689301e-06 20 1.0</transform>
+				<transform>6.9999995 0 0 0.0 0 7 0 0.0 0 0 0.99999964 0.0 -8.3446503e-07 -1.6689301e-06 20 1.0</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="914756046" name="Sprite_1">
-				<mesh_name>guid://86285755a69440b014ec5c4f7cee1d6252cd7d59</mesh_name>
-				<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -15.5 -1.1920929e-06 4 1.0</transform>
-			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1836710283" immovable="1" name="ObjectMeshStatic">
+			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+			<surface name="box" collision="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -18.5 -2 0.46215427 1.0</transform>
 		</node>
 	</editor>
 	<console>
