@@ -16,8 +16,10 @@ public class billboard : Component {
 	}
 	
 	private void Update() {
-		
-		vec3 direction = new vec3(target.Camera.Position - node.WorldPosition).Normalize();
-   		node.SetDirection(-direction, upDirection);
+		if(target != null){
+			vec3 direction = new vec3(target.Camera.Position - node.WorldPosition).Normalize();
+   			node.SetDirection(-direction, upDirection);
+			   
+		}
 	}
 }

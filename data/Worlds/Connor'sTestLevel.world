@@ -660,7 +660,7 @@
 					<parameter name="upDirection">0 0 1</parameter>
 				</property>
 			</properties>
-			<transform>0.0012689076 -1.4999986 6.705518e-07 0.0 -1.3411042e-07 6.7055208e-07 1.4999996 0.0 -0.99999893 -0.00084596814 -8.9406903e-08 0.0 -22.999998 -4.4999995 1.0000001 1.0</transform>
+			<transform>0.0013704291 -1.4999983 9.8347596e-07 0.0 -2.6822084e-07 8.9406944e-07 1.4999996 0.0 -0.99999881 -0.00091358949 -1.490115e-07 0.0 -23.999998 -3.4999998 0.99999923 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1836710283" immovable="1" name="ObjectMeshStatic">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
@@ -704,11 +704,14 @@
 					<parameter name="upDirection">0 0 1</parameter>
 				</property>
 			</properties>
-			<transform>0.0013704291 -1.4999983 9.8347596e-07 0.0 -2.6822084e-07 8.9406944e-07 1.4999996 0.0 -0.99999881 -0.00091358949 -1.490115e-07 0.0 -25.999998 -8.499999 1.0000001 1.0</transform>
+			<transform>0.0013703395 -1.4999983 1.2964e-06 0.0 -2.2351736e-07 1.1622903e-06 1.4999996 0.0 -0.99999887 -0.00091355969 -1.490115e-07 0.0 -26.999998 -7.9999995 1.0000001 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1989519258" immovable="1" name="ObjectMeshStatic_1">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<properties>
+				<property/>
+			</properties>
 			<transform>18.999994 0 0 0.0 0 0.99999952 0 0.0 0 0 1.9999976 0.0 -28.999998 -10.499999 0.99999994 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1087819439" immovable="1" name="ObjectMeshStatic_2">
@@ -719,7 +722,29 @@
 		<node type="ObjectMeshStatic" id="1282815592" immovable="1" name="ObjectMeshStatic_3">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
-			<transform>0.99999988 0 0 0.0 0 11.999998 0 0.0 0 0 1.9999983 0.0 -38.999996 -4.4999995 0.99999994 1.0</transform>
+			<transform>0.99999988 0 0 0.0 0 12.999999 0 0.0 0 0 1.9999981 0.0 -38.999996 -4.4999995 0.99999994 1.0</transform>
+		</node>
+		<node type="NavigationMesh" id="2115756752" name="NavigationMesh">
+			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+			<height>1</height>
+			<transform>20.499996 0 0 0.0 0 15.999998 0 0.0 0 0 0.99999976 0.0 -30.000002 -4.4999995 0 1.0</transform>
+		</node>
+		<node type="ObstacleBox" id="1717808956" name="ObstacleBox">
+			<size>1 1 1</size>
+			<transform>3.4999998 0 0 0.0 0 4.4999986 0 0.0 0 0 3.4999993 0.0 -29.999998 -3.4999998 1.7453885 1.0</transform>
+			<node type="ObjectMeshStatic" id="1142594657" immovable="1" name="ObjectMeshStatic_4">
+				<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+				<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+				<properties>
+					<property/>
+				</properties>
+				<transform>0.99000007 0 0 0.0 0 0.99000001 0 0.0 0 0 0.99000001 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="846520546" name="ObjectMeshStatic_5">
+			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+			<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -36.5 -3.5000002 1.9999999 1.0</transform>
 		</node>
 	</editor>
 	<console>
