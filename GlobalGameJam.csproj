@@ -45,6 +45,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="data/Scripts/Player/PlayerController.cs"/>
+		<Compile Include="data/Scripts/billboard.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
