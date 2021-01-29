@@ -6,11 +6,13 @@
 *.sdf
 *.thumbnails
 
+
 bin/
 obj/
 junk/
 data/configs/unigine.user
 
+guids.db
 launch_debug.bat
 launch_editor.bat
 launch_release.bat

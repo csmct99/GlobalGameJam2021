@@ -2,7 +2,7 @@
 <asset version="2.13.0.0">
 	<guid>87a4f7d80ea79957bb8966ca8b17a7a118259c8c</guid>
 	<type>component</type>
-	<hash>68eb4dc8</hash>
+	<hash>789ffea8</hash>
 	<runtimes>
 		<runtime id="87a4f7d80ea79957bb8966ca8b17a7a118259c8c" name="DefenceIncrease.cs" link="0"/>
 		<runtime id="bc63ae7b8f06d19eafba8c6532b552801d0323df" name="DefenceIncrease.prop" link="1"/>

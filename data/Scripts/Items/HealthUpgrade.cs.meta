@@ -2,7 +2,7 @@
 <asset version="2.13.0.0">
 	<guid>21c55fa2ee615a99fa6a8324329bf433caa1abf6</guid>
 	<type>component</type>
-	<hash>a87eca91</hash>
+	<hash>ab75cd01</hash>
 	<runtimes>
 		<runtime id="21c55fa2ee615a99fa6a8324329bf433caa1abf6" name="HealthUpgrade.cs" link="0"/>
 		<runtime id="bc2eb2dddda7169845c3a9173ffcb38ab4470d61" name="HealthUpgrade.prop" link="1"/>

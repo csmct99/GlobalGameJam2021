@@ -660,7 +660,7 @@
 					<parameter name="upDirection">0 0 1</parameter>
 				</property>
 			</properties>
-			<transform>0.0014649318 -1.4999977 1.6987308e-06 0.0 -4.0233127e-07 1.7881389e-06 1.4999995 0.0 -0.99999863 -0.00097653188 -1.7881379e-07 0.0 -21.499998 -2.9999998 0.9999994 1.0</transform>
+			<transform>0.0015535783 -1.4999974 1.9222475e-06 0.0 -5.3644163e-07 1.9222491e-06 1.4999995 0.0 -0.99999845 -0.0010356894 -2.9802294e-07 0.0 -22.998045 -5.0014634 1.0000011 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1836710283" immovable="1" name="ObjectMeshStatic">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
@@ -737,7 +737,7 @@
 					<parameter name="camera">710667037</parameter>
 				</property>
 			</properties>
-			<transform>0.99999928 0 0 0.0 0 0.99999857 0 0.0 0 0 0.99999732 0.0 -2.9999998 0.99999994 1.4999999 1.0</transform>
+			<transform>5.9604606e-08 -0.99999928 0 0.0 0.99999851 5.960456e-08 0 0.0 0 0 0.99999726 0.0 -29.5 -6.5 1.4999999 1.0</transform>
 			<node type="PlayerDummy" id="710667037" name="PlayerDummy">
 				<znear>0.300000012</znear>
 				<zfar>20000</zfar>
@@ -748,6 +748,11 @@
 				<controlled>1</controlled>
 				<transform>0.99999928 7.1948968e-08 2.9802278e-08 0.0 -2.9802168e-08 -1.1920913e-07 0.99999994 0.0 7.1948726e-08 -0.9999972 -1.1920912e-07 0.0 -3.5762787e-06 -0.49999911 0.99999917 1.0</transform>
 			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="967705339" name="plane">
+			<mesh_name>guid://04e2d9861cb5632da68deaa8278acde7a814721a</mesh_name>
+			<surface name="plane" material="cf6360a8cd65cbe72367581ad052c8b165e2aa5c"/>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -25.499998 -7.4999995 1 1.0</transform>
 		</node>
 	</editor>
 	<console>
