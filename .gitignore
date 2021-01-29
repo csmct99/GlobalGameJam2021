@@ -5,6 +5,7 @@
 *.VC.opendb
 *.sdf
 *.thumbnails
+*.meta
 
 bin/
 obj/
