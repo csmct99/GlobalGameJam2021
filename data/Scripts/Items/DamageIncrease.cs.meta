@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>86689253042673960e1695fd990c5f383c781937</guid>
+	<type>component</type>
+	<hash>2c9affa7</hash>
+	<runtimes>
+		<runtime id="86689253042673960e1695fd990c5f383c781937" name="DamageIncrease.cs" link="0"/>
+		<runtime id="9ef3252ad0b092817e5ec9ec23bf3c5b241445fe" name="DamageIncrease.prop" link="1"/>
+	</runtimes>
+</asset>

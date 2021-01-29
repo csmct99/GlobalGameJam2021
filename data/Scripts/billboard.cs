@@ -19,7 +19,7 @@ public class billboard : Component {
 		if(target != null){
 			vec3 direction = new vec3(target.Camera.Position - node.WorldPosition).Normalize();
    			node.SetDirection(-direction, upDirection);
-			   
+			
 		}
 	}
 }

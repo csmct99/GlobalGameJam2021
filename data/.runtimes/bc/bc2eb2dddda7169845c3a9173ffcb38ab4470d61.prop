@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="HealthUpgrade" guid="bc2eb2dddda7169845c3a9173ffcb38ab4470d61" parent="847afb64839b8f73e8b80e36c6b7301d03bcf2d8" editable="0">
+	<parameter name="healthIncrease" type="int">15</parameter>
+</property>

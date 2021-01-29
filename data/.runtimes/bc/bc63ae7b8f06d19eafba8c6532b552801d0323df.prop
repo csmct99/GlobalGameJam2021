@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="DefenceIncrease" guid="bc63ae7b8f06d19eafba8c6532b552801d0323df" parent="847afb64839b8f73e8b80e36c6b7301d03bcf2d8" editable="0">
+	<parameter name="defenceIncrease" type="int">3</parameter>
+</property>
