@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="NavTest" guid="7236595469fcf4a34bab51a64fe03ccd9310b7c8" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="navMesh" type="node" filter="NavigationMesh"/>
+</property>

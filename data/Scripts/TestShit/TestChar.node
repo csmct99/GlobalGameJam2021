@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.13.0.0">
+	<node type="ObjectMeshStatic" id="878047909" name="TestChar">
+		<mesh_name>guid://d57c8dc08bfca61f3b7abcf29c94f7a9ba2ddcf4</mesh_name>
+		<surface name="box" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+		<body type="BodyRigid" id="2121753271" frozen="0">
+			<angular_scale>0 0 0</angular_scale>
+			<shape type="ShapeBox" id="2121753271">
+				<size>1 1 1</size>
+			</shape>
+		</body>
+		<properties>
+			<property parent="277760ea44f61b4175233bac0ccb831bc6a45dbe" guid="1298e2ff438b14521099a789a95e0b5469ecfea3">
+				<parameter name="playerSpeed">5000</parameter>
+				<parameter name="cameraSpeed">0.100000001</parameter>
+				<parameter name="camera">710667037</parameter>
+			</property>
+		</properties>
+		<transform>0.99999928 0 0 0.0 0 0.99999857 0 0.0 0 0 0.99999732 0.0 0 0 0 1.0</transform>
+		<node type="PlayerDummy" id="710667037" name="PlayerDummy">
+			<znear>0.300000012</znear>
+			<zfar>20000</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>1</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>0.99999928 7.1948968e-08 2.9802278e-08 0.0 -2.9802168e-08 -1.1920913e-07 0.99999994 0.0 7.1948726e-08 -0.9999972 -1.1920912e-07 0.0 -3.5762787e-06 -0.49999911 0.99999917 1.0</transform>
+		</node>
+	</node>
+</nodes>
