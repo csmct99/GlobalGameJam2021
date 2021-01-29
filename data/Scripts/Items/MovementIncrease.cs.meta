@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>c6dd1bd226410909f936fed4b0765c235a929326</guid>
+	<type>component</type>
+	<hash>675766c7</hash>
+	<runtimes>
+		<runtime id="c6dd1bd226410909f936fed4b0765c235a929326" name="MovementIncrease.cs" link="0"/>
+		<runtime id="9b37904d5944f54832b218071dbbf5baa20c89d1" name="MovementIncrease.prop" link="1"/>
+	</runtimes>
+</asset>
