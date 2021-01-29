@@ -37,32 +37,29 @@ public class PlayerCharacter : Component
 	[ShowInEditor][Parameter(Group = "Controls", Tooltip = "Switch Weapon")]
 	private Input.KEY switchWeapon = Input.KEY.DIGIT_1;
 
-	[ShowInEditor]
-	[ParameterSlider(Min = 0.0f, Group = "Input", Tooltip = "Mouse sensitivity multiplier")]
+	[ShowInEditor][ParameterSlider(Min = 0.0f, Group = "Input", Tooltip = "Mouse sensitivity multiplier")]
 	private float mouseSensitivity = 0.4f;
 
-	[ShowInEditor]
-	[Parameter(Group = "Settings", Tooltip = "Power of the jump impulse")]
+	[ShowInEditor][Parameter(Group = "Settings", Tooltip = "Power of the jump impulse")]
 	private float jumpPower = 10000f;
 
-	[ShowInEditor]
-	[Parameter(Group = "Camera", Tooltip = "Drag the camera node from the World Nodes hierarchy here")]
+	[ShowInEditor][Parameter(Group = "Camera", Tooltip = "Drag the camera node from the World Nodes hierarchy here")]
 	private PlayerDummy camera = null;
 
-	[ShowInEditor]
-	[ParameterSlider(Min = -89.9f, Max = 89.9f, Group = "Camera", Tooltip = "The minimum vertical angle of the camera, i.e. maximum possible angle to look down.")]
+	[ShowInEditor][ParameterSlider(Min = -89.9f, Max = 89.9f, Group = "Camera", Tooltip = "The minimum vertical angle of the camera, i.e. maximum possible angle to look down.")]
 	private float minVerticalAngle = -89.9f;
 
-	[ShowInEditor]
-	[ParameterSlider(Min = -89.9f, Max = 89.9f, Group = "Camera", Tooltip = "The maximum vertical angle of the camera, i.e. maximum possible angle to look up.")]
+	[ShowInEditor][ParameterSlider(Min = -89.9f, Max = 89.9f, Group = "Camera", Tooltip = "The maximum vertical angle of the camera, i.e. maximum possible angle to look up.")]
 	private float maxVerticalAngle = 89.9f;
 
 	private float phiAngle = 90.0f;
 	private float cameraVerticalAngle = 0.0f;
 	private float cameraHorizontalAngle = 0.0f;
+	private quat startingRotation;
 	
 	private void Init()
 	{
+		startingRotation = node.GetRotation();
 	}
 	
 	private void Controls (){
@@ -96,21 +93,18 @@ public class PlayerCharacter : Component
 			node.WorldTranslate(strafeDirection * PlayerSpeed * ifps);
 		}
 
-		if (App.MouseGrab) //if game in focus
-		{
-			// change vertical angle of camera
-			cameraVerticalAngle -= Input.MouseDelta.y * mouseSensitivity;
+		// change vertical angle of camera
+		cameraVerticalAngle -= Input.MouseDelta.y * mouseSensitivity;
 
-			//gather mouse input and set range of vertical camera movement
-			float delta = -Input.MouseDelta.y * mouseSensitivity;
-			cameraVerticalAngle += delta;
-			cameraVerticalAngle = MathLib.Clamp(cameraVerticalAngle, minVerticalAngle + 90.0f, maxVerticalAngle + 90.0f);
+		//gather mouse input and set range of vertical camera movement
+		float delta = -Input.MouseDelta.y * mouseSensitivity;
+		cameraVerticalAngle += delta;
+		cameraVerticalAngle = MathLib.Clamp(cameraVerticalAngle, minVerticalAngle + 90.0f, maxVerticalAngle + 90.0f);
 
-			//node and camera horizontal rotation
-			node.Rotate(0.0f, 0.0f, (-Input.MouseDelta.x * mouseSensitivity));
-			cameraHorizontalAngle += (-Input.MouseDelta.x * mouseSensitivity);
+		//node and camera horizontal rotation
+		node.Rotate(0.0f, 0.0f, (-Input.MouseDelta.x * mouseSensitivity));
+		cameraHorizontalAngle += (-Input.MouseDelta.x * mouseSensitivity);
 			
-		}
 		//apply vertical rotation to camera
 		vec3 cameraDirection = forward * MathLib.RotateZ(-cameraHorizontalAngle);
 		cameraDirection = cameraDirection * MathLib.Rotate(MathLib.Cross(cameraDirection, up), 90.0f - cameraVerticalAngle);
@@ -120,6 +114,11 @@ public class PlayerCharacter : Component
 	private void Update() {
 		Controls();
 
+		//Fix wobbly dude syndrome (reset x, y rotations from collisions)
+		quat currentRotation = node.GetRotation();
+		currentRotation.SetX(startingRotation.x);
+		currentRotation.SetY(startingRotation.y);
+		node.SetRotation(currentRotation);
 	}
 
 	private void UpdatePhysics(){

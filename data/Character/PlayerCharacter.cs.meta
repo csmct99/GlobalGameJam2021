@@ -2,7 +2,7 @@
 <asset version="2.13.0.0">
 	<guid>84e17d61124ff74c2d72ca3b0799ba5e12acde25</guid>
 	<type>component</type>
-	<hash>b2a9705f</hash>
+	<hash>0af2c76b</hash>
 	<runtimes>
 		<runtime id="84e17d61124ff74c2d72ca3b0799ba5e12acde25" name="PlayerCharacter.cs" link="0"/>
 		<runtime id="b934a7b7ffcd61aa9860a501982eba6cc9a172db" name="PlayerCharacter.prop" link="1"/>

@@ -344,6 +344,7 @@
 	"c504993408c973032dc7fc86e74a2a2da66605a8": "editor2/resources/nodes/object_dummy.node",
 	"cd12af7e3b9c10c515474b601576073f0f776b92": "shader_d3d11.cache",
 	"786a1708dec74ec7a7603d7a15baae91c4a096bc": "unigine.cache",
+	"e4459dd9fb0d6d6404775973c05d503604678a1d": "shader_d3d11_debug.cache",
 	"f54caf415c80bfacf323371bfed081beec453e05": "editor.cache",
 	"887667987590c6173bf52c8a511b32611c5c284c": "core/locale/unigine.locale",
 	"bb46eff471785ac3d0c04146d00a27edbf006868": ".cache_textures/d1/d17296c8a69640d3c44a515c2a7ad5634ecc1b60.texture",

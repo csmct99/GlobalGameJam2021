@@ -543,6 +543,7 @@
 	<physics>
 		<frozen_linear_velocity>0.0199999996</frozen_linear_velocity>
 		<frozen_angular_velocity>0.0199999996</frozen_angular_velocity>
+		<penetration_factor>0.899999976</penetration_factor>
 	</physics>
 	<game>
 		<enabled>1</enabled>
@@ -645,6 +646,7 @@
 				<shape type="ShapeCapsule" id="677318767" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.25776875 1">
 					<radius>0.5</radius>
 					<height>0.442401052</height>
+					<collision_mask>0x3</collision_mask>
 				</shape>
 			</body>
 			<properties>
@@ -664,20 +666,104 @@
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 1 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="2124639696" name="box">
-			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
-			<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.81376433 4.9694796 0.60698152 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="30951278" name="box_1">
-			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
-			<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.50600767 5.0729771 0.74665928 1.0</transform>
-		</node>
 		<node type="ObjectMeshStatic" id="2052263127" name="box_2">
 			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
-			<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="1603973654" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="1603973654">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.86023974 3.1212316 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="824887448" name="box_1">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="1056365860" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="1056365860">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.495137 4.8749967 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1581089033" name="box_3">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="92467681" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="92467681">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.712714 3.1212316 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="549043814" name="box_4">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="1431731653" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="1431731653">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.4911139 3.1212316 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2141232535" name="box_5">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="1308846191" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="1308846191">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.63863969 3.1212316 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="433369562" name="box_6">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="171950153" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="171950153">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.8562167 4.8749967 1.2606697 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="693794132" name="box_7">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="164936933" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="164936933">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.88150573 3.1212316 2.5648205 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1439302134" name="box_8">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="782118214" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="782118214">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.97096848 3.1212316 2.5648205 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1165012079" name="box_9">
+			<mesh_name>guid://fa2002b4f4b6ce83aacaa20677dd91add49f4728</mesh_name>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="1943964264" frozen="0" immovable="1">
+				<shape type="ShapeBox" id="1943964264">
+					<size>1 1 1</size>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.2466085 4.8749967 2.5648205 1.0</transform>
 		</node>
 	</editor>
 	<console>
