@@ -53,6 +53,7 @@
 		<Compile Include="data/Scripts/Items/HealthUpgrade.cs"/>
 		<Compile Include="data/Scripts/NavTest.cs"/>
 		<Compile Include="data/Scripts/billboard.cs"/>
+		<Compile Include="data/Character/PlayerCharacter.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

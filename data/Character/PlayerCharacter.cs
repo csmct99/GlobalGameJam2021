@@ -84,16 +84,16 @@ public class PlayerCharacter : Component
 		vec3 strafeDirection = node.GetWorldDirection(MathLib.AXIS.X); //get left direction
 		
 		if (Input.IsKeyPressed(forwardMove)){
-			node.WorldPosition += foreDirection * PlayerSpeed * ifps; 
+			node.WorldTranslate(foreDirection * PlayerSpeed * ifps); 
 		}
 		if (Input.IsKeyPressed(backwardMove)){
-			node.WorldPosition -= foreDirection * PlayerSpeed * ifps;
+			node.WorldTranslate(-foreDirection * PlayerSpeed * ifps);
 		}
 		if (Input.IsKeyPressed(leftMove)){
-			node.WorldPosition -= strafeDirection * PlayerSpeed * ifps;
+			node.WorldTranslate(-strafeDirection * PlayerSpeed * ifps);
 		}
 		if (Input.IsKeyPressed(rightMove)){
-			node.WorldPosition -= -strafeDirection * PlayerSpeed * ifps;
+			node.WorldTranslate(strafeDirection * PlayerSpeed * ifps);
 		}
 
 		if (App.MouseGrab) //if game in focus
