@@ -15,3 +15,4 @@ data/configs/unigine.user
 launch_debug.bat
 launch_editor.bat
 launch_release.bat
+GlobalGameJam.csproj
