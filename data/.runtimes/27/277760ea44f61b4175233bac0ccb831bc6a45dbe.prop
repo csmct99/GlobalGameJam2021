@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="pctest" guid="277760ea44f61b4175233bac0ccb831bc6a45dbe" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="playerSpeed" type="float">5000</parameter>
+	<parameter name="cameraSpeed" type="float">0.100000001</parameter>
+	<parameter name="camera" type="node"/>
+	<parameter name="clampX" type="float">75</parameter>
+	<parameter name="clampY" type="float">75</parameter>
+	<parameter name="maxVel" type="float">1</parameter>
+</property>

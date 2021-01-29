@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>8cd04c85da7cd420c86a78ffa6f3b25239ddad89</guid>
+	<type>component</type>
+	<hash>aeeb3ef6</hash>
+	<runtimes>
+		<runtime id="8cd04c85da7cd420c86a78ffa6f3b25239ddad89" name="NavTest.cs" link="0"/>
+		<runtime id="7236595469fcf4a34bab51a64fe03ccd9310b7c8" name="NavTest.prop" link="1"/>
+	</runtimes>
+</asset>

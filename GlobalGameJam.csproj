@@ -46,22 +46,8 @@
 	<ItemGroup>
 		<Compile Include="data/Scripts/Player/PlayerController.cs"/>
 		<Compile Include="data/Scripts/billboard.cs"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 		<Compile Include="data/Scripts/NavTest.cs"/>
 		<Compile Include="data/Scripts/TestShit/pctest.cs"/>
-=======
-		<Compile Include="data/Scripts/Items/ItemBase.cs"/>
-		<Compile Include="data/Scripts/Items/HealthUpgrade.cs"/>
-		<Compile Include="data/Scripts/Items/DamageIncrease.cs"/>
-		<Compile Include="data/Scripts/Items/DefenceIncrease.cs"/>
-		<Compile Include="data/Scripts/Items/MovementIncrease.cs"/>
->>>>>>> Stashed changes
-=======
->>>>>>> parent of c68d62b... Added An Example Char
-=======
->>>>>>> parent of c68d62b... Added An Example Char
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

@@ -6,7 +6,7 @@
 		</settings>
 	</data>
 	<sound>
-		<enabled>0</enabled>
+		<enabled>1</enabled>
 		<sound_manager_load_samples>0</sound_manager_load_samples>
 		<sound_manager_sample_static_memory>64</sound_manager_sample_static_memory>
 		<sound_manager_sample_stream_memory>16</sound_manager_sample_stream_memory>
@@ -660,40 +660,12 @@
 					<parameter name="upDirection">0 0 1</parameter>
 				</property>
 			</properties>
-			<transform>0.0013704291 -1.4999983 9.8347596e-07 0.0 -2.6822084e-07 8.9406944e-07 1.4999996 0.0 -0.99999881 -0.00091358949 -1.490115e-07 0.0 -23.999998 -3.4999998 0.99999923 1.0</transform>
+			<transform>0.0014649318 -1.4999977 1.6987308e-06 0.0 -4.0233127e-07 1.7881389e-06 1.4999995 0.0 -0.99999863 -0.00097653188 -1.7881379e-07 0.0 -21.499998 -2.9999998 0.9999994 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1836710283" immovable="1" name="ObjectMeshStatic">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
 			<transform>0.99999988 0 0 0.0 0 7 0 0.0 0 0 1.9999996 0.0 -19.999998 -2.0000002 0.99999994 1.0</transform>
-		</node>
-		<node type="PlayerActor" id="1334359768" name="PlayerActor">
-			<physical>1</physical>
-			<physical_mass>60</physical_mass>
-			<physical_mask>0x1</physical_mask>
-			<physics_intersection_mask>0x1</physics_intersection_mask>
-			<collision>1</collision>
-			<collision_mask>0x1</collision_mask>
-			<collision_radius>0.300000012</collision_radius>
-			<collision_height>1</collision_height>
-			<min_friction>0.5</min_friction>
-			<max_friction>2</max_friction>
-			<min_velocity>4</min_velocity>
-			<max_velocity>6</max_velocity>
-			<min_theta_angle>-89.9000015</min_theta_angle>
-			<max_theta_angle>89.9000015</max_theta_angle>
-			<acceleration>8</acceleration>
-			<damping>8</damping>
-			<turning>90</turning>
-			<jumping>0.5</jumping>
-			<znear>0.300000012</znear>
-			<zfar>20000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<is_main>1</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>-4.3711388e-08 1 -4.3711388e-08 0.0 -1 -4.3711388e-08 1.9106855e-15 0.0 0 4.3711388e-08 1 0.0 -25.999998 -0.99999994 0 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="204196186" name="Sprite_1">
 			<mesh_name>guid://04e2d9861cb5632da68deaa8278acde7a814721a</mesh_name>
@@ -704,7 +676,7 @@
 					<parameter name="upDirection">0 0 1</parameter>
 				</property>
 			</properties>
-			<transform>0.0013703395 -1.4999983 1.2964e-06 0.0 -2.2351736e-07 1.1622903e-06 1.4999996 0.0 -0.99999887 -0.00091355969 -1.490115e-07 0.0 -26.999998 -7.9999995 1.0000001 1.0</transform>
+			<transform>0.0015533993 -1.4999974 2.2351712e-06 0.0 -6.2584854e-07 2.0116559e-06 1.4999995 0.0 -0.99999857 -0.0010356893 -4.7683668e-07 0.0 -22.499998 -8.499999 1.0000001 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1989519258" immovable="1" name="ObjectMeshStatic_1">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
@@ -731,20 +703,51 @@
 		</node>
 		<node type="ObstacleBox" id="1717808956" name="ObstacleBox">
 			<size>1 1 1</size>
-			<transform>3.4999998 0 0 0.0 0 4.4999986 0 0.0 0 0 3.4999993 0.0 -29.999998 -3.4999998 1.7453885 1.0</transform>
+			<transform>3.4999998 0 0 0.0 0 4.4999981 0 0.0 0 0 3.4999993 0.0 -30.000002 -3.5000002 8.499999 1.0</transform>
 			<node type="ObjectMeshStatic" id="1142594657" immovable="1" name="ObjectMeshStatic_4">
 				<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 				<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
 				<properties>
 					<property/>
 				</properties>
-				<transform>0.99000007 0 0 0.0 0 0.99000001 0 0.0 0 0 0.99000001 0.0 0 0 0 1.0</transform>
+				<transform>0.98999989 0 0 0.0 0 0.99000007 0 0.0 0 0 0.99000007 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
 		<node type="ObjectMeshStatic" id="846520546" name="ObjectMeshStatic_5">
 			<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
-			<surface name="box" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<surface name="box" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<properties>
+				<property parent="7236595469fcf4a34bab51a64fe03ccd9310b7c8" guid="29d973bb4dd955de2b5cc3a58135a0c0dcf49d1f"/>
+			</properties>
 			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -36.5 -3.5000002 1.9999999 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="878047909" name="Cuboid">
+			<mesh_name>guid://d57c8dc08bfca61f3b7abcf29c94f7a9ba2ddcf4</mesh_name>
+			<surface name="box" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<body type="BodyRigid" id="2121753271" frozen="0">
+				<angular_scale>0 0 0</angular_scale>
+				<shape type="ShapeBox" id="2121753271">
+					<size>1 1 1</size>
+				</shape>
+			</body>
+			<properties>
+				<property parent="277760ea44f61b4175233bac0ccb831bc6a45dbe" guid="1298e2ff438b14521099a789a95e0b5469ecfea3">
+					<parameter name="playerSpeed">5000</parameter>
+					<parameter name="cameraSpeed">0.100000001</parameter>
+					<parameter name="camera">710667037</parameter>
+				</property>
+			</properties>
+			<transform>0.99999928 0 0 0.0 0 0.99999857 0 0.0 0 0 0.99999732 0.0 -2.9999998 0.99999994 1.4999999 1.0</transform>
+			<node type="PlayerDummy" id="710667037" name="PlayerDummy">
+				<znear>0.300000012</znear>
+				<zfar>20000</zfar>
+				<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+				<is_oblique_frustum>0</is_oblique_frustum>
+				<is_main>1</is_main>
+				<is_listener>1</is_listener>
+				<controlled>1</controlled>
+				<transform>0.99999928 7.1948968e-08 2.9802278e-08 0.0 -2.9802168e-08 -1.1920913e-07 0.99999994 0.0 7.1948726e-08 -0.9999972 -1.1920912e-07 0.0 -3.5762787e-06 -0.49999911 0.99999917 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>
