@@ -36,12 +36,12 @@
 	<show_fps>0</show_fps>
 	<show_profiler>0</show_profiler>
 	<show_profiler_charts>1</show_profiler_charts>
-	<show_visualizer>1</show_visualizer>
+	<show_visualizer>0</show_visualizer>
 	<video_extension>2</video_extension>
 	<visualizer_fix_flicker>1</visualizer_fix_flicker>
 	<world_handler_3d>0</world_handler_3d>
 	<world_handler_distance>500</world_handler_distance>
-	<world_show_handler>44 34 33 59 57 63 62 61 60 51 48 55 11 10 9 8 15 13 12 1 67 0 66 7 65 6 64 27 70 26 69 25 68 24 30 28 19 18 17 16 23 22 43 42 41 40 47 46 45</world_show_handler>
+	<world_show_handler>55 57 59 61 60 65 63 64 62 67 1 66 0 69 68 70 7 6 9 8 11 10 13 12 15 17 16 19 18 23 22 25 24 27 26 28 30 33 34 41 40 43 42 45 44 47 46 48 51</world_show_handler>
 	<world_show_spatial>0</world_show_spatial>
 	<world_show_visualizer/>
 	<console_bindings/>

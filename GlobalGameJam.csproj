@@ -56,6 +56,7 @@
 		<Compile Include="data/Scripts/Attackable.cs"/>
 		<Compile Include="data/Character/PlayerCharacter.cs"/>
 		<Compile Include="data/Scripts/Enemy/Enemy.cs"/>
+		<Compile Include="data/Scripts/Items/ModifierController.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
