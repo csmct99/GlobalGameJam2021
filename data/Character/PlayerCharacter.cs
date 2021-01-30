@@ -43,6 +43,12 @@ public class PlayerCharacter : Component
 	[ShowInEditor][Parameter(Group = "Settings", Tooltip = "Power of the jump impulse")]
 	private float jumpPower = 10000f;
 
+	[ShowInEditor][Parameter(Group = "Settings", Tooltip = "Jump cooldown")]
+	private float jumpCooldown = 1f;
+
+	[ShowInEditor][Parameter(Group = "Settings", Tooltip = "Jump timer")]
+	private float jumpStartTime = -999f;
+	
 	[ShowInEditor][Parameter(Group = "Camera", Tooltip = "Drag the camera node from the World Nodes hierarchy here")]
 	private PlayerDummy camera = null;
 
@@ -52,6 +58,9 @@ public class PlayerCharacter : Component
 	[ShowInEditor][ParameterSlider(Min = -89.9f, Max = 89.9f, Group = "Camera", Tooltip = "The maximum vertical angle of the camera, i.e. maximum possible angle to look up.")]
 	private float maxVerticalAngle = 89.9f;
 
+	[ShowInEditor][Parameter(Group="Refernaces. That's right, Refernaces")]
+	private PhysicalTrigger attackHitBox;
+
 	private float phiAngle = 90.0f;
 	private float cameraVerticalAngle = 0.0f;
 	private float cameraHorizontalAngle = 0.0f;
@@ -59,10 +68,12 @@ public class PlayerCharacter : Component
 	
 	private void Init()
 	{
+		Visualizer.Enabled = true;
 		startingRotation = node.GetRotation();
 	}
 	
-	private void Controls (){
+	private void Controls ()
+	{
 		float ifps = Game.IFps;
 		vec3 up = vec3.UP; //always UP
 		vec3 forward = vec3.FORWARD; //always FOREWARD
@@ -92,7 +103,12 @@ public class PlayerCharacter : Component
 		if (Input.IsKeyPressed(rightMove)){
 			node.WorldTranslate(strafeDirection * PlayerSpeed * ifps);
 		}
-
+		if(Input.IsMouseButtonDown(wpnAttack)){
+			Attack();
+		}
+		if(Input.IsKeyPressed(playerJump)){
+			Jump();
+		}
 		// change vertical angle of camera
 		cameraVerticalAngle -= Input.MouseDelta.y * mouseSensitivity;
 
@@ -111,16 +127,41 @@ public class PlayerCharacter : Component
 		cameraDirection.Normalize();
 		camera.SetWorldDirection(cameraDirection, up);
 	}
-	private void Update() {
+	private void Attack()
+	{
+		List<Attackable> targetsToSlap = attackHitBox.GetComponent<PlayerAttackHitDetection>().GetSlappableTargets();
+		foreach (Attackable targ in targetsToSlap)
+		{
+			//le smack
+			Unigine.Console.WriteLine("SMACK");
+			//TODO: proper le smack logic goes here
+		}
+	}
+	private void Jump()
+	{
+		if(Game.Time - jumpStartTime > jumpCooldown){
+			Unigine.Console.WriteLine(vec3.UP * jumpPower * Game.IFps);
+			//node.ObjectBodyRigid.AddLinearImpulse(up * jumpPower * ifps);
+			node.ObjectBodyRigid.AddWorldImpulse(node.WorldPosition, (vec3.UP * jumpPower * Game.IFps));
+			jumpStartTime = Game.Time;
+		}
+	}
+	private void Update()
+	{
 		Controls();
-
 		//Fix wobbly dude syndrome (reset x, y rotations from collisions)
+		//vec3 veloc = node.ObjectBodyRigid.GetVelocity(vec3.ZERO);
 		quat currentRotation = node.GetRotation();
 		currentRotation.SetX(startingRotation.x);
 		currentRotation.SetY(startingRotation.y);
 		node.SetRotation(currentRotation);
+		//node.ObjectBodyRigid.LinearVelocity = veloc;
+		
+
+		//TODO: Add logic to re-align camera to directly ahead of the player in case of wonkiness
 	}
 
-	private void UpdatePhysics(){
+	private void UpdatePhysics()
+	{
 	}
 }
