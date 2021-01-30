@@ -59,6 +59,7 @@ public class PlayerCharacter : Component
 	
 	private void Init()
 	{
+		Visualizer.Enabled = true;
 		startingRotation = node.GetRotation();
 	}
 	
@@ -119,6 +120,8 @@ public class PlayerCharacter : Component
 		currentRotation.SetX(startingRotation.x);
 		currentRotation.SetY(startingRotation.y);
 		node.SetRotation(currentRotation);
+
+		//TODO: Add logic to re-align camera to directly ahead of the player in case of wonkiness
 	}
 
 	private void UpdatePhysics(){

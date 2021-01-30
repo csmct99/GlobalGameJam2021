@@ -11,8 +11,11 @@ bin/
 obj/
 junk/
 data/configs/unigine.user
+data/guids.db
+data/.runtimes/
+data/shader_d3d11.cache
+data/shader_d3d11_debug.cache
 
-guids.db
 launch_debug.bat
 launch_editor.bat
 launch_release.bat
