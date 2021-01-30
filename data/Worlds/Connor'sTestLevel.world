@@ -544,6 +544,7 @@
 	<physics>
 		<frozen_linear_velocity>0.0199999996</frozen_linear_velocity>
 		<frozen_angular_velocity>0.0199999996</frozen_angular_velocity>
+		<penetration_factor>0.899999976</penetration_factor>
 	</physics>
 	<game>
 		<enabled>1</enabled>
