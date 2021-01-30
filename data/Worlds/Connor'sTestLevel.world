@@ -803,7 +803,7 @@
 					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 				</lens_flare_billboards>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -69.499992 -6 -1.5 1.0</transform>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -66 12 -1.5 1.0</transform>
 			</node>
 		</node>
 		<node type="NavigationMesh" id="2115756752" name="NavigationMesh">
@@ -813,23 +813,8 @@
 		</node>
 		<node type="ObjectMeshStatic" id="878047909" name="target">
 			<mesh_name>guid://d57c8dc08bfca61f3b7abcf29c94f7a9ba2ddcf4</mesh_name>
-			<surface name="box" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
-			<transform>2.0828478e-08 -0.34944385 0 0.0 0.34945273 2.0829008e-08 0 0.0 0 0 0.34945893 0.0 -73.504684 13.096445 0.99999958 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="2051405566" name="Rabbit">
-			<mesh_name>guid://b4f6c73734b5fb2af2d9708130e60fecf081ca5b</mesh_name>
-			<surface name="plane" material="a3a745b0ffe19d4f7c486a62ca1166596cc99be4"/>
-			<properties>
-				<property parent="9420cacea10553d5b8e81330f78d0ccf41ea13e2" guid="bf69d48de143ec88d66826475be82efa005af211">
-					<parameter name="target">878047909</parameter>
-					<parameter name="movementSpeed">2</parameter>
-				</property>
-				<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="e0e8b9ec8a606c5b4363b5fe28d065453b1a95e0">
-					<parameter name="target">1010817112</parameter>
-					<parameter name="upDirection">0 0 1</parameter>
-				</property>
-			</properties>
-			<transform>-0.46193978 0.19134143 8.791684e-07 0.0 1.4618035e-06 -5.9008585e-07 0.8999998 0.0 0.38268274 0.92387933 0 0.0 -70.499992 -5.999999 0.88773006 1.0</transform>
+			<surface name="box" intersection_mask="0x8001" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+			<transform>2.0828477e-08 -0.34944382 0 0.0 0.34945273 2.0829008e-08 0 0.0 0 0 0.34945893 0.0 -75.499992 13.096446 0.99999964 1.0</transform>
 		</node>
 		<node type="PlayerSpectator" id="1010817112" name="PlayerSpectator">
 			<collision>1</collision>
@@ -987,7 +972,7 @@
 			</node>
 			<node type="ObstacleBox" id="1657752448" name="ObstacleBox_26">
 				<size>1 1 1</size>
-				<transform>1.4999985 0 0 0.0 0 28.5 0 0.0 0 0 1.9999996 0.0 -64.5 2 0.9999994 1.0</transform>
+				<transform>1.4999979 0 0 0.0 0 21.5 0 0.0 0 0 1.9999995 0.0 -64.5 -1.9035089 0.99999952 1.0</transform>
 				<node type="ObjectMeshStatic" id="943874779" immovable="1" name="ObjectMeshStatic_4">
 					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
@@ -1011,14 +996,14 @@
 			</node>
 			<node type="ObstacleBox" id="177517426" name="ObstacleBox_19">
 				<size>1 1 1</size>
-				<transform>2 0 0 0.0 0 2.0000002 0 0.0 0 0 3.4999986 0.0 -73.5 9 1.499999 1.0</transform>
+				<transform>10.000001 0 0 0.0 0 2.0000002 0 0.0 0 0 3.4999986 0.0 -75.5 9 1.499999 1.0</transform>
 				<node type="ObjectMeshStatic" id="189524628" immovable="1" name="ObjectMeshStatic_4">
 					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
 					<properties>
 						<property/>
 					</properties>
-					<transform>0.98999995 0 0 0.0 0 0.98999995 0 0.0 0 0 0.98999977 0.0 0 0 0 1.0</transform>
+					<transform>0.98999995 0 0 0.0 0 0.98999995 0 0.0 0 0 0.98999971 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
 			<node type="ObstacleBox" id="1997850176" name="ObstacleBox_20">
@@ -1035,7 +1020,7 @@
 			</node>
 			<node type="ObstacleBox" id="2130640910" name="ObstacleBox_21">
 				<size>1 1 1</size>
-				<transform>2 0 0 0.0 0 2.0000002 0 0.0 0 0 3.4999986 0.0 -67.5 10.999999 1.499999 1.0</transform>
+				<transform>2 0 0 0.0 0 2.0000002 0 0.0 0 0 3.4999986 0.0 -71.547577 10.856694 1.499999 1.0</transform>
 				<node type="ObjectMeshStatic" id="1250809123" immovable="1" name="ObjectMeshStatic_4">
 					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
 					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
@@ -1093,6 +1078,62 @@
 					<transform>0.98999989 0 0 0.0 0 0.99000001 0 0.0 0 0 0.98999995 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
+			<node type="ObstacleBox" id="1207929995" name="ObstacleBox_9">
+				<size>1 1 1</size>
+				<transform>11.499995 0 0 0.0 0 1.5000004 0 0.0 0 0 1.9999988 0.0 -62.574562 20.675446 0.9999997 1.0</transform>
+				<node type="ObjectMeshStatic" id="1873224474" immovable="1" name="ObjectMeshStatic_4">
+					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+					<properties>
+						<property/>
+					</properties>
+					<transform>0.98999989 0 0 0.0 0 0.99000001 0 0.0 0 0 0.98999995 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObstacleBox" id="327950577" name="ObstacleBox_10">
+				<size>1 1 1</size>
+				<transform>11.499995 0 0 0.0 0 1.5000004 0 0.0 0 0 1.9999987 0.0 -66.5 26.350891 0.99999976 1.0</transform>
+				<node type="ObjectMeshStatic" id="1188986372" immovable="1" name="ObjectMeshStatic_4">
+					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+					<properties>
+						<property/>
+					</properties>
+					<transform>0.98999989 0 0 0.0 0 0.99000001 0 0.0 0 0 0.98999995 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObstacleBox" id="916266130" name="ObstacleBox_11">
+				<size>1 1 1</size>
+				<transform>6.8545302e-07 -11.499992 0 0.0 1.5000004 8.9406996e-08 0 0.0 0 0 1.9999986 0.0 -71.649109 21.000004 0.99999982 1.0</transform>
+				<node type="ObjectMeshStatic" id="1708755583" immovable="1" name="ObjectMeshStatic_4">
+					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+					<properties>
+						<property/>
+					</properties>
+					<transform>0.98999989 0 0 0.0 0 0.99000001 0 0.0 0 0 0.98999995 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObstacleBox" id="1385585531" name="ObstacleBox_12">
+				<size>1 1 1</size>
+				<transform>11.499995 0 0 0.0 0 1.5000004 0 0.0 0 0 1.9999987 0.0 -63.342655 16.018333 0.99999976 1.0</transform>
+				<node type="ObjectMeshStatic" id="1163254556" immovable="1" name="ObjectMeshStatic_4">
+					<mesh_name>guid://05a719238e5a2c26b450554dbb04f648c2d82507</mesh_name>
+					<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
+					<properties>
+						<property/>
+					</properties>
+					<transform>0.98999989 0 0 0.0 0 0.99000001 0 0.0 0 0 0.98999995 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeReference" id="1736574369" name="Rabbit">
+			<reference>guid://e5baf46b42c2fece33f9f7d5acac6730c5fd50cf</reference>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -73.113281 -8.3469124 0.865188 1.0</transform>
+		</node>
+		<node type="NodeReference" id="99024874" name="Rabbit">
+			<reference>guid://e5baf46b42c2fece33f9f7d5acac6730c5fd50cf</reference>
+			<transform>0.99999976 0 0 0.0 0 0.75438589 0 0.0 0 0 0.99999976 0.0 -67.999992 22.999998 0.90224355 1.0</transform>
 		</node>
 	</editor>
 	<console>

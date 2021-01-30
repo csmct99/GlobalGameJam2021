@@ -45,6 +45,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="data/Scripts/Items/DefenceIncrease.cs"/>
+		<Compile Include="data/Character/PlayerAttackHitDetection.cs"/>
 		<Compile Include="data/Scripts/Items/ItemBase.cs"/>
 		<Compile Include="data/Scripts/Items/MovementIncrease.cs"/>
 		<Compile Include="data/Scripts/TestShit/pctest.cs"/>
@@ -52,6 +53,7 @@
 		<Compile Include="data/Scripts/Items/DamageIncrease.cs"/>
 		<Compile Include="data/Scripts/Items/HealthUpgrade.cs"/>
 		<Compile Include="data/Scripts/billboard.cs"/>
+		<Compile Include="data/Scripts/Attackable.cs"/>
 		<Compile Include="data/Character/PlayerCharacter.cs"/>
 		<Compile Include="data/Scripts/Enemy/Enemy.cs"/>
 	</ItemGroup>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.13.0.0">
+	<node type="ObjectMeshStatic" id="1599478008" name="Rabbit">
+		<mesh_name>guid://b4f6c73734b5fb2af2d9708130e60fecf081ca5b</mesh_name>
+		<surface name="plane" physics_friction="1" physics_restitution="1" material="a3a745b0ffe19d4f7c486a62ca1166596cc99be4"/>
+		<properties>
+			<property parent="9420cacea10553d5b8e81330f78d0ccf41ea13e2" guid="134ca308ac106ac7f13ea97a010e2a911745e2bc">
+				<parameter name="target">878047909</parameter>
+				<parameter name="shootPosition">1374107458</parameter>
+				<parameter name="movementSpeed">2</parameter>
+				<parameter name="agentRadius">0.100000001</parameter>
+			</property>
+			<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="67ae5eeb3f0e674e43f14655b00263b0dc76234f">
+				<parameter name="target">1010817112</parameter>
+				<parameter name="upDirection">0 0 1</parameter>
+			</property>
+		</properties>
+		<transform>-0.4999997 0 8.7817614e-07 0.0 1.5807165e-06 5.3644143e-08 0.89999944 0.0 0 0.99999934 5.9604616e-08 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="1374107458" name="ShootPosition">
+			<transform>-1.8477597 1.8049916e-06 0.38268304 0.0 0.76536614 -7.4765109e-07 0.92387992 0.0 3.5166729e-06 1.1111109 -1.1920919e-07 0.0 -0.26869202 0.26395941 0.04983139 1.0</transform>
+		</node>
+	</node>
+</nodes>

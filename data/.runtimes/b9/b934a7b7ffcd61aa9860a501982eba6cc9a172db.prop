@@ -12,7 +12,10 @@
 	<parameter name="switchWeapon" type="switch" tooltip="Switch Weapon" group="Controls" items="SPACE=32,EXCLAIM,DOUBLE_QUOTE,HASH,DOLLAR,PERCENT,AMPERSAND,QUOTE,APOSTROPHE=39,LEFT_PAREN,RIGHT_PAREN,ASTERISK,PLUS,COMMA,MINUS,DOT,SLASH,COLON=58,SEMICOLON,LESS,EQUALS,GREATER,QUESTION,AT,LEFT_BRACKET=91,BACK_SLASH,RIGHT_BRACKET,CARET,UNDERSCORE,BACK_QUOTE,DIGIT_0=48,DIGIT_1,DIGIT_2,DIGIT_3,DIGIT_4,DIGIT_5,DIGIT_6,DIGIT_7,DIGIT_8,DIGIT_9,A=97,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,ESC=256,TAB,BACKSPACE,RETURN,DELETE,INSERT,HOME,END,PGUP,PGDOWN,LEFT,RIGHT,UP,DOWN,SHIFT,CTRL,ALT,CMD,SCROLL,CAPS,NUM,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,NUM_KEYS">49</parameter>
 	<parameter name="mouseSensitivity" type="float" tooltip="Mouse sensitivity multiplier" group="Input" min="0">0.400000006</parameter>
 	<parameter name="jumpPower" type="float" tooltip="Power of the jump impulse" group="Settings">10000</parameter>
+	<parameter name="jumpCooldown" type="float" tooltip="Jump cooldown" group="Settings">1</parameter>
+	<parameter name="jumpStartTime" type="float" tooltip="Jump timer" group="Settings">-999</parameter>
 	<parameter name="camera" type="node" tooltip="Drag the camera node from the World Nodes hierarchy here" group="Camera" filter="PlayerDummy"/>
 	<parameter name="minVerticalAngle" type="float" tooltip="The minimum vertical angle of the camera, i.e. maximum possible angle to look down." group="Camera" min="-89.9" max="89.9">-89.9000015</parameter>
 	<parameter name="maxVerticalAngle" type="float" tooltip="The maximum vertical angle of the camera, i.e. maximum possible angle to look up." group="Camera" min="-89.9" max="89.9">89.9000015</parameter>
+	<parameter name="attackHitBox" type="node" group="Refernaces. That&apos;s right, Refernaces" filter="PhysicalTrigger"/>
 </property>
