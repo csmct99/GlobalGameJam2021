@@ -51,9 +51,9 @@
 		<Compile Include="data/Scripts/Player/PlayerController.cs"/>
 		<Compile Include="data/Scripts/Items/DamageIncrease.cs"/>
 		<Compile Include="data/Scripts/Items/HealthUpgrade.cs"/>
-		<Compile Include="data/Scripts/NavTest.cs"/>
 		<Compile Include="data/Scripts/billboard.cs"/>
 		<Compile Include="data/Character/PlayerCharacter.cs"/>
+		<Compile Include="data/Scripts/Enemy/Enemy.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
