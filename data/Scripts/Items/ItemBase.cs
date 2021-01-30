@@ -11,11 +11,17 @@ public class ItemBase : Component
 	protected string itemName;
 
 	//TODO private DrewsPlayerClass player;
-
+	[ShowInEditor]
+	public PhysicalTrigger physicalTrigger;
 
 	private void Init()
 	{
-		// write here code to be called on component initialization
+		physicalTrigger = node.GetChild(0) as PhysicalTrigger;
+
+		if (physicalTrigger != null)
+		{
+			physicalTrigger.AddEnterCallback(EnterCallback);
+		}
 		
 	}
 	
@@ -25,21 +31,17 @@ public class ItemBase : Component
 		
 	}
 
-	public void CollisionCallback(Body body){
-		if(body.Object !=null) {
-			if(body.Object.GetComponent<ItemBase>() !=null){//is this a player?
+	public void EnterCallback(Body body){
 				//player = body.Object.GetComponent<DrewsCharacterController>();
-				ItemEquip();
-				isEquipped = true;
-			}
-
-		}
-	
+				//ItemEquip();
+				//isEquipped = true;
+				Log.WarningLine("Debug info: HIT");
+				ModifierController.Instance.GetNewItem(this);
+				node.DeleteLater();
 	}
 
 	protected virtual void ItemEquip(){
 		//How the item Equips to the player
-		
 	}
 
 	protected virtual void ItemUnequip(){
