@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.13.0.0">
-	<node type="ObjectDummy" id="430036371" name="BasicPlayer">
-		<body type="BodyRigid" id="793690507" frozen="0">
+	<node type="ObjectDummy" id="1405210275" name="BasicPlayer">
+		<body type="BodyRigid" id="354213860" frozen="0">
 			<freezable>0</freezable>
-			<shape type="ShapeCapsule" id="677318767" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.25776875 1">
+			<shape type="ShapeCapsule" id="927604062" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.25776875 1">
 				<radius>0.5</radius>
 				<height>0.442401052</height>
 				<collision_mask>0x3</collision_mask>
 			</shape>
 		</body>
 		<properties>
-			<property parent="b934a7b7ffcd61aa9860a501982eba6cc9a172db" guid="61d461a05bbda87fea9a1bd244da09097cfbfed4">
-				<parameter name="camera">1499029999</parameter>
-				<parameter name="attackHitBox">704675346</parameter>
+			<property parent="b934a7b7ffcd61aa9860a501982eba6cc9a172db" guid="6ff3f448fa2f0b07c2e64cba62dcf4d1339ba7fc">
+				<parameter name="camera">1665102007</parameter>
+				<parameter name="attackHitBox">259341947</parameter>
 			</property>
 		</properties>
 		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-		<node type="PlayerDummy" id="1499029999" name="PlayerCamera">
+		<node type="PlayerDummy" id="1665102007" name="PlayerCamera">
 			<znear>0.300000012</znear>
 			<zfar>20000</zfar>
 			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
@@ -25,13 +25,13 @@
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
 			<transform>1 0 0 0.0 0 5.9604652e-08 1 0.0 0 -1 5.9604652e-08 0.0 0 0 1.5 1.0</transform>
-			<node type="PhysicalTrigger" id="704675346" name="AttackHitBox">
+			<node type="PhysicalTrigger" id="259341947" name="AttackHitBox">
 				<type>0</type>
 				<size>1 1 1</size>
 				<collision_mask>0x10</collision_mask>
 				<exclusion_mask>0x0</exclusion_mask>
 				<properties>
-					<property parent="75809534017d3f035e315886534bd62d9903c1a8" guid="798ca45a7ed927f119e9009c72be234b4479a02e"/>
+					<property parent="75809534017d3f035e315886534bd62d9903c1a8" guid="47e0e32bac909e8e1ad194959cd3dcf030a8cb8f"/>
 				</properties>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.062005877 0.057750583 -2.0000002 1.0</transform>
 			</node>

@@ -12,7 +12,7 @@ public class billboard : Component {
 
 	private void Init()
 	{
-		Camera camera = Game.Player.Camera ;
+		camera = Game.Player.Camera ;
 
 		if(camera == null){
 			if(target == null){
@@ -23,6 +23,8 @@ public class billboard : Component {
 	
 	private void Update() {
 		vec3 direction;
+
+		Log.MessageLine(camera.ToString());
 
 		if(camera != null){
 			direction = new vec3(camera.Position - node.WorldPosition).Normalize();

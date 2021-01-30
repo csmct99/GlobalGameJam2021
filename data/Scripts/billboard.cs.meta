@@ -2,7 +2,7 @@
 <asset version="2.13.0.0">
 	<guid>3d50a39e75263665b8e8f480522e5ddf0cf791b2</guid>
 	<type>component</type>
-	<hash>fe1dc1b1</hash>
+	<hash>8010e441</hash>
 	<runtimes>
 		<runtime id="3d50a39e75263665b8e8f480522e5ddf0cf791b2" name="billboard.cs" link="0"/>
 		<runtime id="c3704569ac0b4fb44357b78386cc77062bd362ad" name="billboard.prop" link="1"/>

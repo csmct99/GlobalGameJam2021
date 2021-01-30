@@ -816,7 +816,7 @@
 			<surface name="box" intersection_mask="0x8001" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
 			<transform>2.0828477e-08 -0.34944382 0 0.0 0.34945273 2.0829008e-08 0 0.0 0 0 0.34945893 0.0 -75.499992 13.096446 0.99999964 1.0</transform>
 		</node>
-		<node type="PlayerSpectator" id="1010817112" name="PlayerSpectator">
+		<node type="PlayerSpectator" id="1010817112" enabled="0" name="PlayerSpectator">
 			<collision>1</collision>
 			<collision_mask>0x1</collision_mask>
 			<collision_radius>0.5</collision_radius>
@@ -1127,13 +1127,46 @@
 				</node>
 			</node>
 		</node>
-		<node type="NodeReference" id="1736574369" name="Rabbit">
-			<reference>guid://e5baf46b42c2fece33f9f7d5acac6730c5fd50cf</reference>
-			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -73.113281 -8.3469124 0.865188 1.0</transform>
-		</node>
 		<node type="NodeReference" id="99024874" name="Rabbit">
 			<reference>guid://e5baf46b42c2fece33f9f7d5acac6730c5fd50cf</reference>
 			<transform>0.99999976 0 0 0.0 0 0.75438589 0 0.0 0 0 0.99999976 0.0 -67.999992 22.999998 0.90224355 1.0</transform>
+		</node>
+		<node type="ObjectDummy" id="279724318" name="BasicPlayer">
+			<body type="BodyRigid" id="18763873" frozen="0">
+				<freezable>0</freezable>
+				<shape type="ShapeCapsule" id="1863841818" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.25776875 1">
+					<radius>0.5</radius>
+					<height>0.442401052</height>
+					<collision_mask>0x3</collision_mask>
+				</shape>
+			</body>
+			<properties>
+				<property parent="b934a7b7ffcd61aa9860a501982eba6cc9a172db" guid="a3b2b61d89e6c0d80314ce57d53317cabe3ba4a1">
+					<parameter name="camera">319915033</parameter>
+					<parameter name="attackHitBox">358287032</parameter>
+				</property>
+			</properties>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -62.454926 10.544697 1.6622393 1.0</transform>
+			<node type="PlayerDummy" id="319915033" name="PlayerCamera">
+				<znear>0.300000012</znear>
+				<zfar>20000</zfar>
+				<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+				<is_oblique_frustum>0</is_oblique_frustum>
+				<is_main>1</is_main>
+				<is_listener>1</is_listener>
+				<controlled>1</controlled>
+				<transform>1 0 0 0.0 0 5.9604652e-08 1 0.0 0 -1 5.9604652e-08 0.0 0 0 1.5 1.0</transform>
+				<node type="PhysicalTrigger" id="358287032" name="AttackHitBox">
+					<type>0</type>
+					<size>1 1 1</size>
+					<collision_mask>0x10</collision_mask>
+					<exclusion_mask>0x0</exclusion_mask>
+					<properties>
+						<property parent="75809534017d3f035e315886534bd62d9903c1a8" guid="bcc7758cc611b37bdfdb129eb567d9650e303b80"/>
+					</properties>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.062005877 0.057750583 -2.0000002 1.0</transform>
+				</node>
+			</node>
 		</node>
 	</editor>
 	<console>
