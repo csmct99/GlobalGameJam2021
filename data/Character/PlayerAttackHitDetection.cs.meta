@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>9e1e39e5f6662200c32aad5f14f49b32ea92c0e9</guid>
+	<type>component</type>
+	<hash>be035482</hash>
+	<runtimes>
+		<runtime id="9e1e39e5f6662200c32aad5f14f49b32ea92c0e9" name="PlayerAttackHitDetection.cs" link="0"/>
+		<runtime id="75809534017d3f035e315886534bd62d9903c1a8" name="PlayerAttackHitDetection.prop" link="1"/>
+	</runtimes>
+</asset>

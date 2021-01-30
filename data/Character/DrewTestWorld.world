@@ -643,6 +643,7 @@
 		</node>
 		<node type="ObjectDummy" id="430036371" name="BasicPlayer">
 			<body type="BodyRigid" id="793690507" frozen="0">
+				<freezable>0</freezable>
 				<shape type="ShapeCapsule" id="677318767" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 -0.25776875 1">
 					<radius>0.5</radius>
 					<height>0.442401052</height>
@@ -652,9 +653,10 @@
 			<properties>
 				<property parent="b934a7b7ffcd61aa9860a501982eba6cc9a172db" guid="61d461a05bbda87fea9a1bd244da09097cfbfed4">
 					<parameter name="camera">1499029999</parameter>
+					<parameter name="attackHitBox">704675346</parameter>
 				</property>
 			</properties>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 1 1.0</transform>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 -5.7053003 1 1.0</transform>
 			<node type="PlayerDummy" id="1499029999" name="PlayerCamera">
 				<znear>0.300000012</znear>
 				<zfar>20000</zfar>
@@ -663,7 +665,7 @@
 				<is_main>1</is_main>
 				<is_listener>1</is_listener>
 				<controlled>1</controlled>
-				<transform>1 0 0 0.0 0 5.9604652e-08 1 0.0 0 -1 5.9604652e-08 0.0 0 0 1 1.0</transform>
+				<transform>1 0 0 0.0 0 5.9604652e-08 1 0.0 0 -1 5.9604652e-08 0.0 0 0 1.5 1.0</transform>
 				<node type="PhysicalTrigger" id="704675346" name="AttackHitBox">
 					<type>0</type>
 					<size>1 1 1</size>
@@ -685,6 +687,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="5f7c4f87619dc73a837d2d5136c1867c41f42fab"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.86023974 3.1212316 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="824887448" name="box_1">
@@ -696,6 +701,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="1d782d30073a5ecf1e633de25d3323d9d8813b64"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.495137 4.8749967 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1581089033" name="box_3">
@@ -707,6 +715,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="d63de169c8a43bb4b123b383fc904306160cbead"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.712714 3.1212316 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="549043814" name="box_4">
@@ -718,6 +729,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="761c341e8f8f8ce57b39590008ce785fb427ea32"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.4911139 3.1212316 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="2141232535" name="box_5">
@@ -729,6 +743,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="c127ed68233571a76abd42da97f83471f7f7a31c"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.63863969 3.1212316 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="433369562" name="box_6">
@@ -740,6 +757,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="f2bbcaaf2dd0f8421167dab9dbebc4c48ef20953"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.8562167 4.8749967 1.2606697 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="693794132" name="box_7">
@@ -751,6 +771,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="ed47733300f11ef6610989dd6d6e0198c77f9817"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.88150573 3.1212316 2.5648205 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1439302134" name="box_8">
@@ -762,6 +785,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="be111feed44466754627c550e9e1d86f3bfa2b02"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.97096848 3.1212316 2.5648205 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1165012079" name="box_9">
@@ -773,6 +799,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="f900698e5a60e395a794dff0eea7f28ff5923ea2"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.2466085 4.8749967 2.5648205 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1761482705" name="box_10">
@@ -784,6 +813,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="24139fed814b80686c95e8a7330d4ddabb6ac371"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.88150573 0.9263103 3.5199161 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="573886486" name="box_11">
@@ -795,6 +827,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="1b89624ef9320555576616b090d83a4f705c6362"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.5607207 0.9263103 -0.030838728 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1442869815" name="box_12">
@@ -806,6 +841,9 @@
 					<collision_mask>0x13</collision_mask>
 				</shape>
 			</body>
+			<properties>
+				<property parent="d12bb5e4096407f358692cb6ff5cbc9d92a01558" guid="5e7d23b661ca479dca9224584ceddbd76219c74a"/>
+			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.88150573 0.9263103 0.095768929 1.0</transform>
 		</node>
 	</editor>
