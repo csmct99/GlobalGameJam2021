@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>dbccc688603738479e9818fa5485d4118f627e3c</guid>
+	<type>sound</type>
+	<hash>aad16537</hash>
+	<runtimes>
+		<runtime id="dbccc688603738479e9818fa5485d4118f627e3c" name="EyeGuyShoot.wav" link="0"/>
+	</runtimes>
+</asset>

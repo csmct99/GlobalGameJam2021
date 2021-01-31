@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>84e17d61124ff74c2d72ca3b0799ba5e12acde25</guid>
+	<type>component</type>
+	<hash>815b7a96</hash>
+	<runtimes>
+		<runtime id="84e17d61124ff74c2d72ca3b0799ba5e12acde25" name="PlayerCharacter.cs" link="0"/>
+		<runtime id="b934a7b7ffcd61aa9860a501982eba6cc9a172db" name="PlayerCharacter.prop" link="1"/>
+	</runtimes>
+</asset>

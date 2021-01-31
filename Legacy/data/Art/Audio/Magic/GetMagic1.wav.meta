@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>a8c10f32362ca4e9e12929341804c30365ab0c86</guid>
+	<type>sound</type>
+	<hash>e241b5a1</hash>
+	<runtimes>
+		<runtime id="a8c10f32362ca4e9e12929341804c30365ab0c86" name="GetMagic1.wav" link="0"/>
+	</runtimes>
+</asset>

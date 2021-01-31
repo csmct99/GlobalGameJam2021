@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>dcf1ded8969954573651e5ca10e01aa1fc25738c</guid>
+	<type>material</type>
+	<hash>7bea03dc</hash>
+	<runtimes>
+		<runtime id="dcf1ded8969954573651e5ca10e01aa1fc25738c" name="gib" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

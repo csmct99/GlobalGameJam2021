@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>cf6360a8cd65cbe72367581ad052c8b165e2aa5c</guid>
+	<type>material</type>
+	<hash>c9a105a3</hash>
+	<runtimes>
+		<runtime id="cf6360a8cd65cbe72367581ad052c8b165e2aa5c" name="TestMaterial" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

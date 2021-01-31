@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>c88adb822ea3e4f9444dca046d43cd93e023f5d6</guid>
+	<type>world</type>
+	<hash>9b6b19ab</hash>
+	<runtimes>
+		<runtime id="c88adb822ea3e4f9444dca046d43cd93e023f5d6" name="ItemTestWorld.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="script_name"/>
+	</parameters>
+</asset>

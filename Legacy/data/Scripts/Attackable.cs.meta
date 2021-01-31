@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>a984125541bebfb04baecf4ff99ff462827f6859</guid>
+	<type>component</type>
+	<hash>ab114603</hash>
+	<runtimes>
+		<runtime id="a984125541bebfb04baecf4ff99ff462827f6859" name="Attackable.cs" link="0"/>
+		<runtime id="d12bb5e4096407f358692cb6ff5cbc9d92a01558" name="Attackable.prop" link="1"/>
+	</runtimes>
+</asset>

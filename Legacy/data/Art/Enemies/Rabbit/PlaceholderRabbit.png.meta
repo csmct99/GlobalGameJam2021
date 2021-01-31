@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>fbf01cc28207b5399b98dd44a6ff47d3719eab16</guid>
+	<type>texture</type>
+	<hash>3235266</hash>
+	<runtimes>
+		<runtime id="fbf01cc28207b5399b98dd44a6ff47d3719eab16" name="PlaceholderRabbit.png" link="0"/>
+		<runtime id="eece677db55b02b8f91b66b7d59f14aa7c58bc01" name="PlaceholderRabbit.dds" link="1"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="mipmap_type">box</parameter>
+		<parameter type="string" name="image_format">DXT5</parameter>
+		<parameter type="bool" name="invert_g">0</parameter>
+		<parameter type="string" name="image_type">2d</parameter>
+		<parameter type="string" name="width">auto</parameter>
+		<parameter type="string" name="height">auto</parameter>
+		<parameter type="bool" name="srgb_correction">1</parameter>
+		<parameter type="bool" name="unchanged">0</parameter>
+		<parameter type="string" name="preset_name">custom</parameter>
+	</parameters>
+</asset>

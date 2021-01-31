@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>fe1e15d54275ed30c29d1ecfbae6fde28e63e3d9</guid>
+	<type>component</type>
+	<hash>01b2a023</hash>
+	<runtimes>
+		<runtime id="fe1e15d54275ed30c29d1ecfbae6fde28e63e3d9" name="ItemBase.cs" link="0"/>
+		<runtime id="847afb64839b8f73e8b80e36c6b7301d03bcf2d8" name="ItemBase.prop" link="1"/>
+	</runtimes>
+</asset>

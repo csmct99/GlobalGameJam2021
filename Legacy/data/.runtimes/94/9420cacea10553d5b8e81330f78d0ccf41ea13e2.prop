@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.13.0.0" name="Enemy" guid="9420cacea10553d5b8e81330f78d0ccf41ea13e2" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="target" type="node" group="Referances"/>
+	<parameter name="shootPosition" type="node" group="Referances"/>
+	<parameter name="movementSpeed" type="float" group="AI Settings">1</parameter>
+	<parameter name="attackDistance" type="float" group="AI Settings">6</parameter>
+	<parameter name="attackDistanceVariability" type="float" group="AI Settings">1</parameter>
+	<parameter name="attackCooldown" type="float" group="AI Settings">3</parameter>
+	<parameter name="bulletPrefab" type="string">Prefabs/Projectile/Gib Projectile.node</parameter>
+	<parameter name="agentRadius" type="float" group="AI Settings">0.5</parameter>
+	<parameter name="DEBUG" type="toggle" group="Settings">1</parameter>
+	<parameter name="maxHealth" type="int">10</parameter>
+</property>
