@@ -1,0 +1,127 @@
+
+---- Engine ----
+Version: 2.13.0.0 ver-2.13.0.0-27a5e15 Dec 15 2020
+Binary: Windows 64-bit Visual C++ 1900 Release
+Engine features: Direct3D11 OpenAL XPad360 Joystick HalfTexCoords Microprofile OpenEXR
+
+---- Configs ----
+Loading boot config "C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/data/configs/default.boot"...
+Loading user config "C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/data/configs/default.user"...
+Using config file "configs/default.config"
+Using boot config file "configs/default.boot"
+Using user config file "configs/default.user"
+Using controls config file "configs/default.controls"
+
+---- GPU Detection ----
+GPU 0 Active: NVIDIA GeForce GTX 1050 4021 MB
+GPU 1		: Intel(R) HD Graphics 630 6214 MB
+GPU 2		: Microsoft Basic Render Driver 6086 MB
+
+---- System ----
+OS:		Windows 10 (build 19041) 64-bit
+
+CPU:	Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+		Frequency: 2806MHz
+		Extensions:  MMX SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 HTT
+		Cores:4 Threads:8
+
+		System memory: 12172 MB
+		Sync threads:  7
+		Async threads: 4
+
+GPU:	NVIDIA GeForce GTX 1050
+		Video memory:  4021 MB
+
+
+---- Plugins ----
+Loading "FbxImporter_x64.dll"...
+Loading "GLTFImporter_x64.dll"...
+Loading "FbxExporter_x64.dll"...
+Plugins initialization: 3ms
+
+
+---- Application ----
+Loading "dxgi.dll"...
+Loading "openal32.dll"...
+Application initialization: 631ms
+
+
+
+---- Render ----
+Renderer: NVidia 4021MB
+Renderer API: Direct3D 11.0
+Maximum texture size:    16384
+Maximum texture units:   16
+
+---- Engine Microprofile ----
+MicroProfile: Web server started on port 1338
+Microprofile info:
+	Max frames: 500
+	Dump frames: 500
+	GPU: Enabled
+	Web server: Enabled
+	Web server port: 1338
+	Web server frames: 200
+
+---- Filesystem ----
+App path:  C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/bin/
+Data path: C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/data/
+Save path: C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/bin/
+
+Runtimes loaded: 17 1ms
+Filesystem initialization: 865ms
+
+---- Sound ----
+Renderer: OpenAL Soft on Speakers (Realtek High Definition Audio(SST))
+OpenAL vendor:   OpenAL Community
+OpenAL renderer: OpenAL Soft
+OpenAL version:  1.1 ALSOFT 1.19.1
+Found AL_EXT_LINEAR_DISTANCE
+Found AL_EXT_OFFSET
+Found ALC_EXT_EFX
+Found ALC_SOFT_HRTF
+Found EFX Filter
+Found EFX Reverb
+Found EAX Reverb
+Found QUAD16 format
+Found 51CHN16 format
+Found 61CHN16 format
+Found 71CHN16 format
+Device enumeration supported
+Maximum sources:         256
+Maximum effect slots:    16
+Maximum auxiliary sends: 2
+Output sampling frequency: 48000hz
+HRTF not enabled!
+
+---- Physics ----
+
+---- PathFind ----
+
+Loading controls "C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/data/configs/default.controls"...
+Loading "xinput1_4.dll"...
+Loading config "C:/Users/Far and Further/Documents/GitHub/GlobalGameJam2021/data/configs/default.config"...
+
+---- Materials ----
+Engine base materials loaded: 192 / 192 (304ms)
+Engine materials loaded:      70 / 70 (25ms)
+User materials loaded:        4 / 4 (2ms)
+Total materials: 266
+
+
+---- Properties ----
+Properties loaded:            17 / 17 (6ms)
+
+Processor registered "DefaultProcessor".
+Importer registered "FbxImporter".
+Processor registered "MergeStaticMeshes".
+Processor registered "MergeSimilarMaterials".
+Processor registered "MergeSurfacesByMaterials".
+Processor registered "CombineByPostfixes".
+Processor registered "SplitByBound".
+Processor registered "Repivot".
+Processor registered "CreateUV".
+Processor registered "CloseAnimation".
+Importer registered "GLTFImporter".
+Exporter registered "FbxExporter".
+ERROR:	Memory::allocate(): Can't allocate 134217728 bytes
