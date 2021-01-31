@@ -48,6 +48,9 @@ MonoBehaviour:
   speed: 9
   damage: 3
   maxLifetime: 30
+  layersToBreakProjectile:
+    serializedVersion: 2
+    m_Bits: 310
 --- !u!135 &6781678320964301247
 SphereCollider:
   m_ObjectHideFlags: 0
