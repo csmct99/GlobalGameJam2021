@@ -106,7 +106,15 @@ public class CharactorController : MonoBehaviour, IDamageable {
     [SerializeField]
     private Sprite idleGun;
 
-    
+    private List<ItemBase> inventory = new List<ItemBase>();
+    public List<ItemBase> GetInventory()
+    {
+        return inventory;
+    }
+    public void SetInventory(List<ItemBase> i)
+    {
+        inventory = i;
+    }
 
     void Start() {
         currentHealth = maxHealth;
