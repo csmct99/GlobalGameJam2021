@@ -7,7 +7,7 @@ public class HealthUpgrade : ItemBase {
 	[SerializeField]
 	private int healthIncrease = 15;
 
-	private void Init()
+	private void Start()
 	{
 		
 	}

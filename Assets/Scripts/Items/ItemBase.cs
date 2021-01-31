@@ -12,7 +12,7 @@ public class ItemBase : MonoBehaviour
 	//[SerializeField]
 	//public PhysicalTrigger physicalTrigger;
 
-	private void Init()
+	private void Start()
 	{
 		//physicalTrigger = node.GetChild(0) as PhysicalTrigger;
 

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenceIncrease : ItemBase
+public class DamageIncrease : ItemBase
 {
 	[SerializeField]
-	private int defenceIncrease = 3;
+	private int attackIncrease = 5;
 
-	private void Init()
+	private void Start()
 	{
 		
 	}
@@ -20,7 +20,7 @@ public class DefenceIncrease : ItemBase
     protected override void ItemEquip()
     {
 		base.ItemEquip();
-		//TODO player.defence += defenceIncrease;
+		//TODO player.attack += attackIncrease;
 		
      
     }
@@ -28,7 +28,7 @@ public class DefenceIncrease : ItemBase
     protected override void ItemUnequip()
     {
 		base.ItemEquip();
-		//TODO player.defence -= defenceIncrease;
+		//TODO player.attack -= attackIncrease;
 		
     
     }

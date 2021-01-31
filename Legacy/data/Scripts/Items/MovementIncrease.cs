@@ -9,18 +9,15 @@ public class MovementIncrease : ItemBase
 	[ShowInEditor]
 	private float movementIncrease = 15f;
 
-	private void Init()
-	{
+	private void Start() {
 		
 	}
 	
-	private void Update()
-	{
+	private void Update() {
 	
 	}
 
-    protected override void ItemEquip()
-    {
+    protected override void ItemEquip() {
 		base.ItemEquip();
 		//TODO player.currentSpeed += movementIncrease;
 		
