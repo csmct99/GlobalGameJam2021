@@ -212,8 +212,12 @@ MonoBehaviour:
   target: {fileID: 0}
   agent: {fileID: 6138061040937484820}
   audioSource: {fileID: 4772948524955953467}
+  gibPrefab: {fileID: 3715107980116034632, guid: 462a5141b2a53cd45ad25e3a4aee34b6, type: 3}
   movementSpeed: 1
+  takeDamageCooldown: 0.1
   attackCooldown: 3
+  numberOfGibsOnDeath: 4
+  gibExplosiveForce: 100
   maxHealth: 10
   layersToBreakLOS:
     serializedVersion: 2
@@ -228,6 +232,10 @@ MonoBehaviour:
   aimSprite: {fileID: 21300000, guid: 52f7c93ef3f213d4799a96769d13d394, type: 3}
   deadSprite: {fileID: 21300000, guid: be3f23dd8bceb7044b54bb144a8cd032, type: 3}
   deathSound: {fileID: 8300000, guid: ac701107a9680054abea2e4b63fbcff0, type: 3}
+  shootSounds:
+  - {fileID: 8300000, guid: 7b3acc8d0da89704aaf9dd8ed2c792da, type: 3}
+  - {fileID: 8300000, guid: 0a559c2cc8fd29c43993ee0c470a5a52, type: 3}
+  - {fileID: 8300000, guid: e01e168eb90c89c47a40e5549d5639f7, type: 3}
 --- !u!1 &7527454318439803772
 GameObject:
   m_ObjectHideFlags: 0

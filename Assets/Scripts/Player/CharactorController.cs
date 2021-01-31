@@ -16,6 +16,9 @@ public class CharactorController : MonoBehaviour, IDamageable {
     private Transform projectileSpawnPoint;
 
     [SerializeField]
+    private Transform swordAttackSpawnPoint;
+
+    [SerializeField]
     private GameObject projectilePrefab;
 
     [SerializeField]
@@ -29,6 +32,9 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField]
     private Animator animator;
+
+    [SerializeField]
+    private AudioSource audioSource;
 
 
     [Header("Settings")]
@@ -44,7 +50,6 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField]
     private int swordDamage = 2;
-
 
     [SerializeField]
     private float swordReach = 1f;
@@ -106,15 +111,24 @@ public class CharactorController : MonoBehaviour, IDamageable {
     [SerializeField]
     private Sprite idleGun;
 
+
     private List<ItemBase> inventory = new List<ItemBase>();
+
     public List<ItemBase> GetInventory()
     {
         return inventory;
     }
+
     public void SetInventory(List<ItemBase> i)
     {
         inventory = i;
     }
+
+    [SerializeField][Header("Audio")]
+    private AudioClip[] shootSounds;
+
+    
+
 
     void Start() {
         currentHealth = maxHealth;
@@ -173,6 +187,13 @@ public class CharactorController : MonoBehaviour, IDamageable {
                     bullet.transform.position = projectileSpawnPoint.transform.position;
                     bullet.transform.LookAt(projectileSpawnPoint.transform.position + projectileSpawnPoint.transform.forward);
 
+                    
+                    int index = Random.Range(0, shootSounds.Length);
+                    print(index);
+
+                    audioSource.clip = shootSounds[index];
+                    audioSource.time = 0;
+                    audioSource.Play();
 
                 }
             }
@@ -184,7 +205,7 @@ public class CharactorController : MonoBehaviour, IDamageable {
     }
 
     private void RaycastSweep() {
-        Vector3 startPos = projectileSpawnPoint.position;
+        Vector3 startPos = swordAttackSpawnPoint.position;
         Vector3 targetPos = Vector3.zero; // variable for calculated end position
 
         int startAngle = (int)( -80 * 0.5 ); // half the angle to the Left of the forward
@@ -197,10 +218,10 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
         // step through and find each target point
         for ( int i = startAngle; i < finishAngle; i += inc ) {
-            targetPos = (Quaternion.Euler( 0, i, 0 ) * projectileSpawnPoint.transform.forward ).normalized * swordReach;  
+            targetPos = (Quaternion.Euler( 0, i, 0 ) * swordAttackSpawnPoint.transform.forward ).normalized * swordReach;  
 
             // linecast between points
-            if ( Physics.Raycast( startPos, targetPos, out hit ) ) { //if his a target
+            if (Physics.Raycast( startPos, targetPos, out hit, swordReach)) { //if his a target
                 IDamageable d = hit.collider.gameObject.GetComponent<IDamageable>();
 
                 if(d != null){
