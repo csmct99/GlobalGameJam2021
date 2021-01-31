@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<property version="2.13.0.0" name="DamageIncrease" guid="9ef3252ad0b092817e5ec9ec23bf3c5b241445fe" parent="847afb64839b8f73e8b80e36c6b7301d03bcf2d8" editable="0">
-	<parameter name="attackIncrease" type="int">5</parameter>
-</property>

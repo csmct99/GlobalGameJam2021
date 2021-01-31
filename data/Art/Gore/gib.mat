@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<material version="2.13.0.0" name="gib" guid="dcf1ded8969954573651e5ca10e01aa1fc25738c" base_material="mesh_base">
-	<options order="0" transparent="1" two_sided="1" cast_shadow="0" cast_world_shadow="0"/>
-	<texture name="albedo">guid://50dc5845c187ece05a973abfd42c0912710a9549</texture>
-</material>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>790cb2d6e83b4c3d19c720780e336977bdafb86a</guid>
-	<type>sound</type>
-	<hash>da6c1f77</hash>
-	<runtimes>
-		<runtime id="790cb2d6e83b4c3d19c720780e336977bdafb86a" name="SwordBLock.wav" link="0"/>
-	</runtimes>
-</asset>

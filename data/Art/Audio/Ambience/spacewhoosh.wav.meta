@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>df845da978fa0af41352b9c351b11446eb56deed</guid>
-	<type>sound</type>
-	<hash>00af99cd</hash>
-	<runtimes>
-		<runtime id="df845da978fa0af41352b9c351b11446eb56deed" name="spacewhoosh.wav" link="0"/>
-	</runtimes>
-</asset>

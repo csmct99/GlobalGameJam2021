@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>6c3698de69cb2aa5b8dadbc048da9c1f48c43af2</guid>
-	<type>sound</type>
-	<hash>e17c2e79</hash>
-	<runtimes>
-		<runtime id="6c3698de69cb2aa5b8dadbc048da9c1f48c43af2" name="SpaceBloop.wav" link="0"/>
-	</runtimes>
-</asset>

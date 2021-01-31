@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>49d15a0830b7b5c7a89f787a1a72ad91389289bc</guid>
-	<type>sound</type>
-	<hash>09876977</hash>
-	<runtimes>
-		<runtime id="49d15a0830b7b5c7a89f787a1a72ad91389289bc" name="MushroomPain.wav" link="0"/>
-	</runtimes>
-</asset>

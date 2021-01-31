@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>059c191b2afffbbeff4a7005cc55a1a083cde87f</guid>
-	<type>sound</type>
-	<hash>ddda31de</hash>
-	<runtimes>
-		<runtime id="059c191b2afffbbeff4a7005cc55a1a083cde87f" name="BunnySpeak.wav" link="0"/>
-	</runtimes>
-</asset>

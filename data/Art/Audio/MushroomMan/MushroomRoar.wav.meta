@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>5db1e762793abf597c5920e4465476f313d8cfb6</guid>
-	<type>sound</type>
-	<hash>1199bf0c</hash>
-	<runtimes>
-		<runtime id="5db1e762793abf597c5920e4465476f313d8cfb6" name="MushroomRoar.wav" link="0"/>
-	</runtimes>
-</asset>

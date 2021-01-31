@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>635f86e884b13d27909b985a73d38bf11278149c</guid>
-	<type>sound</type>
-	<hash>b989bccd</hash>
-	<runtimes>
-		<runtime id="635f86e884b13d27909b985a73d38bf11278149c" name="MagicChorus.wav" link="0"/>
-	</runtimes>
-</asset>

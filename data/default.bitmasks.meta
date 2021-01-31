@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>abf7bcc11c116f2c76e9209b58665d3e9dd66385</guid>
-	<type>file</type>
-	<hash>3c59f9b9</hash>
-	<runtimes>
-		<runtime id="abf7bcc11c116f2c76e9209b58665d3e9dd66385" name="default.bitmasks" link="0"/>
-	</runtimes>
-</asset>

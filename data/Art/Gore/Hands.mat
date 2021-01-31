@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<material version="2.13.0.0" name="Hands" guid="a16bab7e1488dcc55e95a7600318b33fbd422792" base_material="mesh_base">
-	<options transparent="1" two_sided="1"/>
-	<texture name="albedo">guid://50dc5845c187ece05a973abfd42c0912710a9549</texture>
-</material>

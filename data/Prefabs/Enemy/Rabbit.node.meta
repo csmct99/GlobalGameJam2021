@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>e5baf46b42c2fece33f9f7d5acac6730c5fd50cf</guid>
-	<type>node</type>
-	<hash>eb294ddf</hash>
-	<runtimes>
-		<runtime id="e5baf46b42c2fece33f9f7d5acac6730c5fd50cf" name="Rabbit.node" link="0"/>
-	</runtimes>
-</asset>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.13.0.0">
-	<guid>e480a004b71cab93b69b3bd6340e413dee1b9178</guid>
-	<type>sound</type>
-	<hash>1ee4eed9</hash>
-	<runtimes>
-		<runtime id="e480a004b71cab93b69b3bd6340e413dee1b9178" name="Step1.wav" link="0"/>
-	</runtimes>
-</asset>
