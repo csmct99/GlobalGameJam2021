@@ -16,7 +16,13 @@ public class RabbitAI : Enemy {
 	private float attackDistance = 6f;
 
 	[SerializeField]
-	private float attackDistanceVariability = 1f;
+	private float preShotAimDuration = 1f;
+	private float preShotAimStart = -99f;
+	
+	private bool isAiming = false;
+	private bool isReloading = false;
+
+	private bool hasAmmo = true;
 
 	[Header("Rabbit Animations")]
 
@@ -33,9 +39,13 @@ public class RabbitAI : Enemy {
 	private Sprite aimSprite;
 
 	[SerializeField]
-	private float preShotAimDuration = 1f;
-	private float preShotAimStart = -99f;
-	private bool isAiming = false;
+	private Sprite deadSprite;
+
+	[Header("Rabbit Sounds")]
+	[SerializeField]
+	private AudioClip deathSound;
+
+
 
 
 
@@ -43,7 +53,7 @@ public class RabbitAI : Enemy {
 		//print("Logic");
         base.Logic();
 
-		if(Mathf.Abs((target.position - transform.position).magnitude) < ((!isAiming) ? attackDistance : attackDistance*1.5)){ // In range. Turnery is double distance while aiming. This means the player cant easily cheese it
+		if(Mathf.Abs((target.position - transform.position).magnitude) < ((!isAiming) ? attackDistance : attackDistance*1.6)){ // In range. Turnery is double distance while aiming. This means the player cant easily cheese it
 			RaycastHit ray;
 			bool hit = Physics.Raycast(shootPosition.transform.position, (target.position - shootPosition.transform.position).normalized,  out ray, 999f, layersToBreakLOS);
 
@@ -82,7 +92,7 @@ public class RabbitAI : Enemy {
 				isAiming = false;
 				lastAttackTime = Time.time;
 				print("Firing!");
-
+				
 				spriteRenderer.sprite = idleSprite;
 				GameObject projectile = Instantiate(bulletPrefab);
 				projectile.name = "Bullet (" + Time.time + ")";
@@ -94,4 +104,13 @@ public class RabbitAI : Enemy {
 		}
 
     }
+
+	protected override void Die(){
+		base.Die();
+		audioSource.clip = deathSound;
+		audioSource.time = 0;
+		audioSource.Play();
+		spriteRenderer.sprite = deadSprite;
+	}
+
 }

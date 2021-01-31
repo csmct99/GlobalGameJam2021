@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6764406572126670089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.549046
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -66.2361
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301241, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301244, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: m_Name
+      value: GibProjectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301246, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781678320964301246, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
+      propertyPath: layersToBreakProjectile.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
