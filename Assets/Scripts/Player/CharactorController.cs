@@ -112,22 +112,24 @@ public class CharactorController : MonoBehaviour, IDamageable {
     [SerializeField]
     private Sprite idleGun;
 
-<<<<<<< Updated upstream
+
     private List<ItemBase> inventory = new List<ItemBase>();
+
     public List<ItemBase> GetInventory()
     {
         return inventory;
     }
+    
     public void SetInventory(List<ItemBase> i)
     {
         inventory = i;
     }
-=======
+
     [SerializeField][Header("Audio")]
     private AudioClip[] shootSounds;
 
     
->>>>>>> Stashed changes
+
 
     void Start() {
         currentHealth = maxHealth;
