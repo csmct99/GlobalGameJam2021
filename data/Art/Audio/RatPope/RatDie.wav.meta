@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>28053b642720cf738dfc4e369cae701da4cb32d8</guid>
+	<type>sound</type>
+	<hash>9e38e11</hash>
+	<runtimes>
+		<runtime id="28053b642720cf738dfc4e369cae701da4cb32d8" name="RatDie.wav" link="0"/>
+	</runtimes>
+</asset>

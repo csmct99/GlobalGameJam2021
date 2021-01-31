@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>4e237e05a6ef57a0a220267f09ce81d2b1273709</guid>
+	<type>sound</type>
+	<hash>9199ef51</hash>
+	<runtimes>
+		<runtime id="4e237e05a6ef57a0a220267f09ce81d2b1273709" name="Death.wav" link="0"/>
+	</runtimes>
+</asset>

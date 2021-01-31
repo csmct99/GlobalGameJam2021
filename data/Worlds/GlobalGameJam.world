@@ -14,7 +14,6 @@
 		<sound_occlusion>1</sound_occlusion>
 		<al_sound_skip_errors>0</al_sound_skip_errors>
 		<attenuation>3</attenuation>
-		<hrtf>1</hrtf>
 	</sound>
 	<render>
 		<data/>

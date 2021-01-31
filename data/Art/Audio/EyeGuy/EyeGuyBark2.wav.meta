@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>111ed04db9833548235b580705d435ba54c7c9d1</guid>
+	<type>sound</type>
+	<hash>6f2bf0d9</hash>
+	<runtimes>
+		<runtime id="111ed04db9833548235b580705d435ba54c7c9d1" name="EyeGuyBark2.wav" link="0"/>
+	</runtimes>
+</asset>

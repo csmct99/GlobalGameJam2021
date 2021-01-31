@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>bfffe3dc31b32d8b9940a56eee5f2df5c080e6d0</guid>
+	<type>sound</type>
+	<hash>d8401b62</hash>
+	<runtimes>
+		<runtime id="bfffe3dc31b32d8b9940a56eee5f2df5c080e6d0" name="SwitchToSword.wav" link="0"/>
+	</runtimes>
+</asset>

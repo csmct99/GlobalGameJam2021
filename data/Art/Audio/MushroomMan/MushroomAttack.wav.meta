@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>26aed1cd57ec48c8f3f655872034153ab2332351</guid>
+	<type>sound</type>
+	<hash>87f647f2</hash>
+	<runtimes>
+		<runtime id="26aed1cd57ec48c8f3f655872034153ab2332351" name="MushroomAttack.wav" link="0"/>
+	</runtimes>
+</asset>

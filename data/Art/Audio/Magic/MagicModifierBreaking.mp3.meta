@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>76291e7397e251360d8e971d7eb72dd822185757</guid>
+	<type>sound</type>
+	<hash>e5bde0a9</hash>
+	<runtimes>
+		<runtime id="76291e7397e251360d8e971d7eb72dd822185757" name="MagicModifierBreaking.mp3" link="0"/>
+	</runtimes>
+</asset>

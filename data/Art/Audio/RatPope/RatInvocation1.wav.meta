@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>73b2f33d2a649b78a834a87735d9eb6ac9a623c1</guid>
+	<type>sound</type>
+	<hash>adcc071</hash>
+	<runtimes>
+		<runtime id="73b2f33d2a649b78a834a87735d9eb6ac9a623c1" name="RatInvocation1.wav" link="0"/>
+	</runtimes>
+</asset>

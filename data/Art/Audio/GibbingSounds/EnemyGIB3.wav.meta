@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>6678494e865dc055322095b061eaad4fa31e3a62</guid>
+	<type>sound</type>
+	<hash>80d75ca2</hash>
+	<runtimes>
+		<runtime id="6678494e865dc055322095b061eaad4fa31e3a62" name="EnemyGIB3.wav" link="0"/>
+	</runtimes>
+</asset>

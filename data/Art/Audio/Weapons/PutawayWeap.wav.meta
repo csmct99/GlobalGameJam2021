@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>c46375c656bed26d389c10e8f1c03f27472ab25a</guid>
+	<type>sound</type>
+	<hash>715357c2</hash>
+	<runtimes>
+		<runtime id="c46375c656bed26d389c10e8f1c03f27472ab25a" name="PutawayWeap.wav" link="0"/>
+	</runtimes>
+</asset>

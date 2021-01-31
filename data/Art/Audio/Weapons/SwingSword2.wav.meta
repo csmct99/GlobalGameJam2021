@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>ef66f5455e1fe5e02c84dfbf49fb6a1286388249</guid>
+	<type>sound</type>
+	<hash>2d1bc341</hash>
+	<runtimes>
+		<runtime id="ef66f5455e1fe5e02c84dfbf49fb6a1286388249" name="SwingSword2.wav" link="0"/>
+	</runtimes>
+</asset>

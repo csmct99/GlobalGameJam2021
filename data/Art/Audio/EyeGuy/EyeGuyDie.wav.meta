@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>4bb92e406183cc9faf2eb17210a36229c3d84574</guid>
+	<type>sound</type>
+	<hash>bc4d319b</hash>
+	<runtimes>
+		<runtime id="4bb92e406183cc9faf2eb17210a36229c3d84574" name="EyeGuyDie.wav" link="0"/>
+	</runtimes>
+</asset>

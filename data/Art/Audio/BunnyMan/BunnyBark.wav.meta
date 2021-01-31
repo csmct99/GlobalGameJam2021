@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>333b027d97a0e1b81481b9b719e34baa80b98701</guid>
+	<type>sound</type>
+	<hash>01101c68</hash>
+	<runtimes>
+		<runtime id="333b027d97a0e1b81481b9b719e34baa80b98701" name="BunnyBark.wav" link="0"/>
+	</runtimes>
+</asset>

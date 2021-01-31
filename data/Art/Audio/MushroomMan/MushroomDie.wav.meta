@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>1c03047c4c7b95abfa0aaf0e49176b15bc56c170</guid>
+	<type>sound</type>
+	<hash>0f4285</hash>
+	<runtimes>
+		<runtime id="1c03047c4c7b95abfa0aaf0e49176b15bc56c170" name="MushroomDie.wav" link="0"/>
+	</runtimes>
+</asset>

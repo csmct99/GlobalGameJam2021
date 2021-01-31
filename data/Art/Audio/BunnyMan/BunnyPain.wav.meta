@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.13.0.0">
+	<guid>e8c7e2f8dd3c49f7b7161eea5db9c141e136a9ac</guid>
+	<type>sound</type>
+	<hash>d29779b5</hash>
+	<runtimes>
+		<runtime id="e8c7e2f8dd3c49f7b7161eea5db9c141e136a9ac" name="BunnyPain.wav" link="0"/>
+	</runtimes>
+</asset>
