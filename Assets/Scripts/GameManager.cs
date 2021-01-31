@@ -4,9 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance = null;
+    public static GameManager Instance { get { return instance; } } // public static property that gets the instance.
+
     //Temp ref until levels have players in em
     CharactorController playerChar = new CharactorController();
     
+    void Awake() {
+        
+        if(instance != null && instance != this) { // If instance does not equal null and instance does not equal self, destroy.
+            Destroy(gameObject);
+            return;
+        }
+        else {
+
+            instance = this; //if it is null make instance, this
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
