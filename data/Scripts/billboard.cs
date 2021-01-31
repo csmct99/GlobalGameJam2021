@@ -32,6 +32,6 @@ public class billboard : Component {
 			direction = new vec3(target.WorldPosition - node.WorldPosition).Normalize();
 		}
 
-		node.SetDirection(-direction, upDirection);
+		node.SetWorldDirection(-direction, upDirection);
 	}
 }

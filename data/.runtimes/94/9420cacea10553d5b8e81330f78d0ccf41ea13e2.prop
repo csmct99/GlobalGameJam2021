@@ -5,6 +5,8 @@
 	<parameter name="movementSpeed" type="float" group="AI Settings">1</parameter>
 	<parameter name="attackDistance" type="float" group="AI Settings">6</parameter>
 	<parameter name="attackDistanceVariability" type="float" group="AI Settings">1</parameter>
+	<parameter name="attackCooldown" type="float" group="AI Settings">3</parameter>
+	<parameter name="bulletPrefab" type="string">Prefabs/Projectile/Gib Projectile.node</parameter>
 	<parameter name="agentRadius" type="float" group="AI Settings">0.5</parameter>
 	<parameter name="DEBUG" type="toggle" group="Settings">1</parameter>
 	<parameter name="maxHealth" type="int">10</parameter>

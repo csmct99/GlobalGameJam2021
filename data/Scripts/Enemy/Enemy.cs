@@ -22,6 +22,13 @@ public class Enemy : Component {
 	private float attackDistanceVariability = 1f;
 
 	[ShowInEditor] [Parameter(Group = "AI Settings")]
+	private float attackCooldown = 3f;
+	private float lastAttackTime = -999f;
+
+	[ShowInEditor] 
+	private string bulletPrefab = "Prefabs/Projectile/Gib Projectile.node";
+
+	[ShowInEditor] [Parameter(Group = "AI Settings")]
 	private float agentRadius = 0.5f;
 
 	[ShowInEditor] [Parameter(Group = "Settings")]
@@ -36,9 +43,7 @@ public class Enemy : Component {
 	private WorldIntersection intersection;
 
 	private void Init() {
-
 		health = maxHealth;
-
 
 		route = new PathRoute();
 		route.Radius = agentRadius;
@@ -53,10 +58,8 @@ public class Enemy : Component {
 
 	}
 
-	
 
-
-	private void PathfindingLogic(){
+	protected virtual void PathfindingLogic(){
 		if(DEBUG){
 			Visualizer.RenderCircle(agentRadius, new mat4(quat.IDENTITY, node.WorldPosition), vec4.YELLOW);
 			Visualizer.RenderCircle(attackDistance - attackDistanceVariability, new mat4(quat.IDENTITY, target.WorldPosition), vec4.RED); //Min dist
@@ -91,7 +94,8 @@ public class Enemy : Component {
 			}
 
 			if(!invalidTargetFound){
-				Log.MessageLine("Shoot that mofo");
+				if(DEBUG) Log.MessageLine("Shoot that mofo");
+				Attack();
 
 			}else{
 				Move(); //Move to target
@@ -100,7 +104,19 @@ public class Enemy : Component {
 		}
 	}
 
-	private void Move(){
+	protected virtual void Attack(){
+		if(Game.Time - lastAttackTime > attackCooldown){ // Can attack
+			lastAttackTime = Game.Time;
+			Node projectile = World.LoadNode(bulletPrefab);
+			projectile.WorldPosition = shootPosition.WorldPosition;
+			projectile.SetWorldDirection((shootPosition.WorldPosition - target.WorldPosition).Normalize(), vec3.UP);
+			if(DEBUG) Visualizer.RenderVector(node.WorldPosition, (shootPosition.WorldPosition - target.WorldPosition).Normalize(), vec4.RED);
+
+
+		}
+	}
+
+	protected virtual void Move(){
 			route.Create2D(node.WorldPosition, target.WorldPosition); //Calc a new path to the target
 
 			if(route.NumPoints > 1) {

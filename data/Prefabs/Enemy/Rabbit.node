@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.13.0.0">
-	<node type="ObjectMeshStatic" id="1051619357" name="Rabbit">
+	<node type="ObjectMeshStatic" id="463506036" name="Rabbit">
 		<mesh_name>guid://b4f6c73734b5fb2af2d9708130e60fecf081ca5b</mesh_name>
 		<surface name="plane" physics_friction="1" physics_restitution="1" material="a3a745b0ffe19d4f7c486a62ca1166596cc99be4"/>
 		<properties>
-			<property parent="9420cacea10553d5b8e81330f78d0ccf41ea13e2" guid="fc16f8df7e8970b26db29869d97b86b4a6f48283">
-				<parameter name="target">279724318</parameter>
-				<parameter name="shootPosition">1589941215</parameter>
+			<property parent="9420cacea10553d5b8e81330f78d0ccf41ea13e2" guid="b1ee4f50f7f2da6feba34502fe6a4079c9556f84">
+				<parameter name="target">324639296</parameter>
+				<parameter name="shootPosition">536237345</parameter>
 				<parameter name="movementSpeed">2</parameter>
 				<parameter name="agentRadius">0.100000001</parameter>
 			</property>
-			<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="e1a4c606af4965ad4f910b2828267467f6d2e69a">
+			<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="6418351325aa37565f8606bd256198f8f58e87f7">
 				<parameter name="target">1010817112</parameter>
 				<parameter name="upDirection">0 0 1</parameter>
 			</property>
 		</properties>
-		<transform>-0.4999997 0 8.7817614e-07 0.0 1.5807165e-06 5.3644147e-08 0.89999944 0.0 0 0.9999994 5.9604616e-08 0.0 0 0 0 1.0</transform>
-		<node type="NodeDummy" id="1589941215" name="ShootPosition">
-			<transform>-1.8477597 1.8049916e-06 0.38268304 0.0 0.76536614 -7.4765109e-07 0.92387992 0.0 3.5166729e-06 1.1111109 -1.1920919e-07 0.0 -0.26869202 0.26395941 0.04983139 1.0</transform>
+		<transform>-0.99999988 -1.4210854e-12 1.7563526e-06 0.0 3.8639755e-06 1.3113019e-07 2.1999993 0.0 -1.4210832e-12 0.99999827 5.9604545e-08 0.0 0 0 0.30619872 1.0</transform>
+		<node type="NodeDummy" id="536237345" name="ShootPosition">
+			<transform>-1.8477597 1.8049916e-06 0.38268295 0.0 0.46490586 -4.5414529e-07 0.98610711 0.0 6.2518779e-06 1.1111108 -2.1069545e-07 0.0 -0.26869202 0.26395944 0.13831139 1.0</transform>
 		</node>
 	</node>
 </nodes>
