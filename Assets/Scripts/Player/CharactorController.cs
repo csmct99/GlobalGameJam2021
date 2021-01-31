@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharactorController : MonoBehaviour {
+public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField] [Header("Referances")]
     private Camera playerCamera;
@@ -16,7 +16,12 @@ public class CharactorController : MonoBehaviour {
     [SerializeField]
     private CharacterController controller;
 
-    [SerializeField][Header("Settings")][Range(100f, 3000f)]
+    [Header("Settings")]
+    [SerializeField]
+    private int maxHealth = 20;
+    private int currentHealth = 20;
+
+    [SerializeField][Range(100f, 3000f)]
     private float mouseSens = 1f;
 
     [SerializeField][Range(1f, 40f)]
@@ -59,6 +64,8 @@ public class CharactorController : MonoBehaviour {
     private bool isOnGround = false;
 
     void Start() {
+        currentHealth = maxHealth;
+
         Cursor.lockState = CursorLockMode.Locked; //Locks the cursor to the screen
     }
     
@@ -75,7 +82,7 @@ public class CharactorController : MonoBehaviour {
         }
 
         if(Input.GetKeyDown(reloadKey)){ //Reload
-            
+
         }
 
 
@@ -137,5 +144,17 @@ public class CharactorController : MonoBehaviour {
         currentYRotation = Mathf.Clamp(currentYRotation - mouseY, -maxYRotation, maxYRotation); //Clamp the look up down angles
 
         playerCamera.transform.localRotation = Quaternion.Euler(currentYRotation, 0, 0);
+    }
+
+
+    public void TakeDamage(int damage){
+        
+        currentHealth -= damage;
+        print("Player took " + damage + " damage");
+
+        if(currentHealth < 1){
+            print("Player died");
+            Destroy(gameObject);
+        }
     }
 }

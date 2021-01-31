@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
 	private float lastAttackTime = -999f;
 
 	[SerializeField] 
-	private string bulletPrefab = "Prefabs/Projectile/Gib Projectile.GameObject";
+	private GameObject bulletPrefab;
 
 	[SerializeField]
 	private float agentRadius = 0.5f;
@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour {
 	private int health;
 
 	
+	public LayerMask attackMask = -1;
 
 
     void Start() {
@@ -50,14 +51,46 @@ public class Enemy : MonoBehaviour {
     }
 
     void Update() {
-        if(Mathf.Abs((target.position - transform.position).magnitude) > 6){
-			agent.SetDestination(target.position);
-			agent.isStopped = false;
-		}else{
-			print("Close enough, done");
-			agent.isStopped = true;
+		agent.isStopped = true; //Set to true every frame (Will be overridden if needed)
+
+        if(Mathf.Abs((target.position - transform.position).magnitude) < attackDistance){ // In range
+			RaycastHit ray;
+			bool hit = Physics.Raycast(shootPosition.transform.position, (target.position - shootPosition.transform.position).normalized,  out ray, 999f, attackMask);
+
+			if(hit){ // Hit something
+				if(ray.collider.gameObject.CompareTag("Player")){ //Hit player
+					Attack();
+				}else{
+					MoveToTarget();
+				}
+			}else{
+				MoveToTarget();
+			}
+
+		}else{ //Not in range
+			MoveToTarget();
 		}
     }
+
+	private void MoveToTarget(){
+			agent.SetDestination(target.position);
+			agent.isStopped = false;
+	}
+
+	private void Attack(){
+		if(Time.time - lastAttackTime > attackCooldown){
+			lastAttackTime = Time.time;
+
+			print("Firing!");
+
+			GameObject projectile = Instantiate(bulletPrefab);
+			projectile.name = "Bullet (" + Time.time + ")";
+			projectile.transform.position = shootPosition.transform.position;
+			projectile.transform.LookAt(target.transform.position);
+
+
+		}
+	}
 
     
 }
