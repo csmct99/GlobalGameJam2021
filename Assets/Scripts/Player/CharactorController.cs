@@ -7,40 +7,56 @@ public class CharactorController : MonoBehaviour {
     [SerializeField] [Header("Referances")]
     private Camera playerCamera;
 
-    [SerializeField] [Header("Referances")]
+    [SerializeField]
     private Transform body;
 
-    [SerializeField][Header("Referances")]
+    [SerializeField]
     private Transform groundChecker;
 
-    [SerializeField] [Header("Referances")]
+    [SerializeField]
     private CharacterController controller;
 
     [SerializeField][Header("Settings")][Range(100f, 3000f)]
     private float mouseSens = 1f;
 
-    [SerializeField][Header("Settings")][Range(1f, 40f)]
+    [SerializeField][Range(1f, 40f)]
     private float movementSpeed = 12f;
 
-    [SerializeField][Header("Settings")][Range(0f, 10f)][Tooltip("How high you jump in meters")]
+    [SerializeField][Range(1f, 40f)]
+    private float sprintAdditionalSpeed = 6f;
+
+    [SerializeField][Range(0f, 10f)][Tooltip("How high you jump in meters")]
     private float jumpHeight = 3f;
 
     private float currentYRotation = 0f;
     
-    [SerializeField][Header("Settings")][Range(0f, 90f)][Tooltip("The max angle you can look up and down at. + and - not sum.")]
+    [SerializeField][Range(0f, 90f)][Tooltip("The max angle you can look up and down at. + and - not sum.")]
     private float maxYRotation = 80;
 
     private Vector3 vel;
 
-    [SerializeField][Header("Settings")][Range(0f, 50f)]
+    [SerializeField][Range(0f, 50f)]
     private float playerGravity = -9.81f; //Gravity const
 
-    [SerializeField][Header("Settings")][Range(0f, 5f)][Tooltip("Distance to the ground before velocity becomes a constant. Set this to how far the groundChecker point is from the ground when the player is standing still")]
+    [SerializeField][Range(0f, 5f)][Tooltip("Distance to the ground before velocity becomes a constant. Set this to how far the groundChecker point is from the ground when the player is standing still")]
     float groundDist = 0.4f;
+
+    [Header("Inputs (Some are in project inputs)")]
+    [SerializeField]
+    private KeyCode jumpKey = KeyCode.Space;
+
+    [SerializeField]
+    private KeyCode sprintKey = KeyCode.LeftShift;
+
+    [SerializeField]
+    private KeyCode reloadKey = KeyCode.R;
+
+    [SerializeField]
+    private KeyCode switchWeaponKey = KeyCode.Alpha1;
 
     public LayerMask groundMask;
 
-    bool isOnGround = false;
+    private bool isOnGround = false;
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked; //Locks the cursor to the screen
@@ -50,6 +66,19 @@ public class CharactorController : MonoBehaviour {
         CameraController();
         MovementControls();
         PhysicsChecks();
+        WeaponControls();
+    }
+
+    private void WeaponControls(){
+        if(Input.GetKeyDown(switchWeaponKey)){ //Switch weapon
+
+        }
+
+        if(Input.GetKeyDown(reloadKey)){ //Reload
+            
+        }
+
+
     }
 
     /// <summary>
@@ -74,17 +103,25 @@ public class CharactorController : MonoBehaviour {
     /// Handles wasd movement
     /// </summary>
     private void MovementControls(){
+
+        float extraMovementSpeed = 0f;
+
+        //Jump Controls
+        if(Input.GetKeyDown(jumpKey) && isOnGround){
+            vel.y = Mathf.Sqrt(jumpHeight * -2f * playerGravity); //Jump to given height
+        }
+
+        //Sprint controls
+        if(Input.GetKey(sprintKey) && isOnGround){
+            extraMovementSpeed = sprintAdditionalSpeed;
+        }
+
         //WASD controls
         float side = Input.GetAxis("Horizontal");
         float forward = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * side + transform.forward * forward;
-        controller.Move(move * movementSpeed * Time.deltaTime); //the controller handles collisions and all the nitty gritty
-
-        //Jump Controls
-        if(Input.GetButtonDown("Jump") && isOnGround){
-            vel.y = Mathf.Sqrt(jumpHeight * -2f * playerGravity); //Jump to given height
-        }
+        controller.Move(move * (movementSpeed + extraMovementSpeed) * Time.deltaTime); //the controller handles collisions and all the nitty gritty
 
     }
 
