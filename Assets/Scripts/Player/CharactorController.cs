@@ -51,7 +51,6 @@ public class CharactorController : MonoBehaviour, IDamageable {
     [SerializeField]
     private int swordDamage = 2;
 
-
     [SerializeField]
     private float swordReach = 1f;
 
@@ -119,7 +118,7 @@ public class CharactorController : MonoBehaviour, IDamageable {
     {
         return inventory;
     }
-    
+
     public void SetInventory(List<ItemBase> i)
     {
         inventory = i;

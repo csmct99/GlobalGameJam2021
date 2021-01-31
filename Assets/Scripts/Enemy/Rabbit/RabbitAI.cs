@@ -71,7 +71,9 @@ public class RabbitAI : Enemy {
 			}
 
 		}else{ //Not in range
-			MoveToTarget();
+			if(Mathf.Abs((target.position - transform.position).magnitude) < engageDistance){
+				MoveToTarget();
+			}
 		}
     }
 
