@@ -12,7 +12,8 @@ public class BillboardSprite : MonoBehaviour {
 
     void Update() {
 		if(Camera.main != null){
-            gameObject.transform.LookAt(Camera.main.gameObject.transform.position); //Dude ... this shit is so much easier in Unity ...
+            //Lookat backwards (sprites are backwards for some reason)
+            gameObject.transform.LookAt(2 * transform.position - Camera.main.gameObject.transform.position); //Dude ... this shit is so much easier in Unity ...
 		}
 
         
