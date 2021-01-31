@@ -214,9 +214,10 @@ MonoBehaviour:
   attackCooldown: 3
   DEBUG: 1
   maxHealth: 10
+  animator: {fileID: 0}
   layersToBreakLOS:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 1335
   bulletPrefab: {fileID: 6781678320964301244, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
   shootPosition: {fileID: 6138061039125501066}
   attackDistance: 10
@@ -225,3 +226,4 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 466cee7165f4f48478bb4880efeaefa0, type: 3}
   reloadingSprite: {fileID: 21300000, guid: b98a22ed65d102d4497412d74b689986, type: 3}
   aimSprite: {fileID: 21300000, guid: 52f7c93ef3f213d4799a96769d13d394, type: 3}
+  preShotAimDuration: 5

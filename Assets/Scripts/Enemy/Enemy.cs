@@ -25,6 +25,9 @@ public class Enemy : MonoBehaviour {
 	protected int maxHealth = 10;
 	protected int health;
 
+	[SerializeField]
+	protected Animator animator;
+
 
 	public LayerMask layersToBreakLOS = -1;
 
