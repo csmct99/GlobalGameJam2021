@@ -18,6 +18,10 @@ public class Enemy : MonoBehaviour, IDamageable {
 	protected float movementSpeed = 1f;
 
 	[SerializeField]
+	private float takeDamageCooldown = 0.1f;
+	private float lastDamageTaken = -99f;
+
+	[SerializeField]
 	protected float attackCooldown = 3f;
 	protected float lastAttackTime = -999f;
 
@@ -26,6 +30,7 @@ public class Enemy : MonoBehaviour, IDamageable {
 	protected int maxHealth = 10;
 	protected int health;
 	protected bool isDead = false;
+	protected bool isDeadFirst = true;
 
 	[SerializeField]
 	protected LayerMask layersToBreakLOS = -1;
@@ -54,16 +59,20 @@ public class Enemy : MonoBehaviour, IDamageable {
 
 	}
 
-
-	public virtual void TakeDamage(int damage){
-		health -= damage;
-		if(health < 1){
-			Die();
+	public void TakeDamage(int damage){
+		//print(name + " took damage " + damage);
+		if(Time.time - lastDamageTaken > takeDamageCooldown){
+			lastDamageTaken = Time.time;
+			health -= damage;
+			if(health < 1 && isDeadFirst){
+				Die();
+			}
 		}
 	}
 
 	protected virtual void Die(){
 		isDead = true;
+		isDeadFirst = false;
 	}
     
 }

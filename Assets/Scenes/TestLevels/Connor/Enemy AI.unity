@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-135424
+  m_Name: pb_Mesh14996
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7227,6 +7227,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6746112037281754350, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.265
+      objectReference: {fileID: 0}
     - target: {fileID: 7929977914661660001, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7251,6 +7255,10 @@ PrefabInstance:
       propertyPath: spriteRenderer
       value: 
       objectReference: {fileID: 1975547353}
+    - target: {fileID: 7929977914661660012, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
+      propertyPath: swordSwingTime
+      value: 0.33
+      objectReference: {fileID: 0}
     - target: {fileID: 7929977914661660015, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
       propertyPath: m_RootOrder
       value: 3

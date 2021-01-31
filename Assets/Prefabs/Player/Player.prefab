@@ -104,6 +104,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   maxHealth: 20
   reloadTime: 3
+  swordDamage: 1
+  swordReach: 2
+  swordSwingTime: 0.25
   mouseSens: 1000
   movementSpeed: 12
   sprintAdditionalSpeed: 6

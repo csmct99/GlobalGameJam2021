@@ -34,7 +34,7 @@ public class GibBullet : MonoBehaviour
 			bool hit = Physics.Raycast(transform.position, transform.forward, out ray,  (transform.forward * speed * Time.deltaTime).magnitude, layersToBreakProjectile);
 
             if(hit){ // If there is something that is no excluded by the mask
-                destroyGib();
+                hitTarget(ray.collider);
             }
 
             gameObject.transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
@@ -42,8 +42,13 @@ public class GibBullet : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collider){
-        IDamageable d = collider.gameObject.GetComponent<IDamageable>();
-        print(collider.gameObject.name);
+        hitTarget(collider);
+    }
+
+    private void hitTarget(Collider c){
+        IDamageable d = c.gameObject.GetComponent<IDamageable>();
+        print(c.gameObject.name);
+        
         if(d != null){
             d.TakeDamage(damage);
         }
