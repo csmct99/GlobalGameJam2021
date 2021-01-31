@@ -75,10 +75,10 @@ MonoBehaviour:
     value: 3
   toneCurveToeStrength:
     overrideState: 1
-    value: 1
+    value: 0.72
   toneCurveToeLength:
     overrideState: 1
-    value: 1
+    value: 0.84
   toneCurveShoulderStrength:
     overrideState: 0
     value: 0
