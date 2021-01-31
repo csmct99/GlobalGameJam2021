@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour, IDamageable {
 	protected float movementSpeed = 1f;
 
 	[SerializeField]
+	protected float engageDistance = 30f;
+
+	[SerializeField]
 	private float takeDamageCooldown = 0.1f;
 	private float lastDamageTaken = -99f;
 
