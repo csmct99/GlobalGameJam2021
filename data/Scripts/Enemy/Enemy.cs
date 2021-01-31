@@ -84,10 +84,20 @@ public class Enemy : Component {
 			bool invalidTargetFound = false;
 			foreach(Unigine.Object o in objects){ //For every object collided with
 				Node n = o as Node;
+				//Log.MessageLine(n.Name);
 
-				if(n.Equals(target) || n.Equals(node) || n.GetComponent<Enemy>() != null){ //If the thing on the shoot path is the target or this enemy, that is fine
+				if(n.Equals(target) || n.Equals(node) || n.GetComponent<Enemy>() != null || n.GetComponent<Projectile>() != null){ //If the thing on the shoot path is the target or this enemy, that is fine
+					
 					continue;
-				}else{ // Something is in the way
+				}else if(n.Parent != null){
+					if(n.Parent.GetComponent<Projectile>() != null){
+						continue;
+					} else {
+						invalidTargetFound = true;
+						break;
+					}
+				} else { // Something is in the way
+
 					invalidTargetFound = true;
 					break;
 				}
@@ -110,7 +120,7 @@ public class Enemy : Component {
 			Node projectile = World.LoadNode(bulletPrefab);
 			projectile.WorldPosition = shootPosition.WorldPosition;
 			projectile.SetWorldDirection((shootPosition.WorldPosition - target.WorldPosition).Normalize(), vec3.UP);
-			if(DEBUG) Visualizer.RenderVector(node.WorldPosition, (shootPosition.WorldPosition - target.WorldPosition).Normalize(), vec4.RED);
+			
 
 
 		}

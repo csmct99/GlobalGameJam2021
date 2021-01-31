@@ -14,6 +14,23 @@ public class Projectile : Component {
 
 	private void Init() {
 		Visualizer.Enabled = true;
+		node.GetChild(0).ObjectBody.AddContactEnterCallback((b, num) => Contact(b, num));
+	}
+
+	public void Contact(Body body, int num){
+		Node n = null;
+		if(body.Object as Node != null)
+			n = body.Object as Node;
+		
+		if(n !=null){
+			Log.MessageLine("Contacted: " + n.Name);
+			Log.MessageLine(num);
+		}else{
+			Log.MessageLine("Contacted unknown");
+			Log.MessageLine(num);
+		}
+
+		node.DeleteLater();
 		
 	}
 	

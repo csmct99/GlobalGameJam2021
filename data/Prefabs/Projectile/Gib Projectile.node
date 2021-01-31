@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.13.0.0">
-	<node type="NodeDummy" id="1009081364" name="Gib Projectile">
+	<node type="NodeDummy" id="1389940553" name="Gib Projectile Dummy">
 		<properties>
-			<property parent="c5210518e67bc5978d31260ab40fdde15e9dddcc" guid="a8bb5373976d0236931f941dc0e206d8c1bb5c57">
+			<property parent="c5210518e67bc5978d31260ab40fdde15e9dddcc" guid="467020dab2817a71d8d4311c968299cbef2aa4ae">
 				<parameter name="DEBUG">1</parameter>
 				<parameter name="speed">4</parameter>
 			</property>
 		</properties>
 		<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="719491795" name="Gib Projectile Sprite">
+		<node type="ObjectMeshStatic" id="305041486" name="Gib Projectile Sprite">
 			<mesh_name>guid://f8aa9fdf7592ebb2c32fd7693ef1b9b4e1471983</mesh_name>
-			<surface name="plane" physics_friction="1" physics_restitution="1" material="dcf1ded8969954573651e5ca10e01aa1fc25738c"/>
+			<surface name="plane" intersection="0" physics_friction="1" physics_restitution="1" material="dcf1ded8969954573651e5ca10e01aa1fc25738c"/>
+			<body type="BodyDummy" id="131628151" frozen="0">
+				<shape type="ShapeSphere" id="1390613529">
+					<radius>0.271876454</radius>
+				</shape>
+			</body>
 			<properties>
-				<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="be3c4dca853762a1b3441b8c2a8a217bb3cca89e">
+				<property parent="c3704569ac0b4fb44357b78386cc77062bd362ad" guid="7434a43525b5681097ab9c2f90f79bc277032839">
 					<parameter name="upDirection">-1 0 0</parameter>
 				</property>
 			</properties>
 			<transform>0.00077217811 0 -0.99999964 0.0 0 0.99999952 0 0.0 0.9999994 0 0.00077217794 0.0 0 0 0 1.0</transform>
-			<node type="LightOmni" id="118592584" name="Gib Projectile Light">
+			<node type="LightOmni" id="1302434116" name="Gib Projectile Light">
 				<attenuation_distance>1</attenuation_distance>
 				<shape>2 1 0.200000003</shape>
 				<shape_type>0</shape_type>

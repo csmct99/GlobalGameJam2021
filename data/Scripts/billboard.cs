@@ -24,8 +24,6 @@ public class billboard : Component {
 	private void Update() {
 		vec3 direction;
 
-		Log.MessageLine(camera.ToString());
-
 		if(camera != null){
 			direction = new vec3(camera.Position - node.WorldPosition).Normalize();
 		}else{

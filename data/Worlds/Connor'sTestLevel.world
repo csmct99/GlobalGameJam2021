@@ -817,7 +817,7 @@
 			<surface name="box" intersection_mask="0x8001" physics_friction="0" physics_restitution="10" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb"/>
 			<transform>2.0828477e-08 -0.34944382 0 0.0 0.34945273 2.0829008e-08 0 0.0 0 0 0.34945893 0.0 -75.499992 13.096446 0.99999964 1.0</transform>
 		</node>
-		<node type="PlayerSpectator" id="1010817112" name="PlayerSpectator">
+		<node type="PlayerSpectator" id="1010817112" enabled="0" name="PlayerSpectator">
 			<collision>1</collision>
 			<collision_mask>0x1</collision_mask>
 			<collision_radius>0.5</collision_radius>
@@ -1169,9 +1169,9 @@
 				</node>
 			</node>
 		</node>
-		<node type="NodeReference" id="857201194" name="Gib Projectile">
+		<node type="NodeReference" id="1025027284" name="Gib Projectile">
 			<reference>guid://db021a7ec8667fc5bac8ee600efd4e3f90a00692</reference>
-			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -59.999996 12.499999 2.5 1.0</transform>
+			<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999994 0.0 -52.999996 12.499999 4 1.0</transform>
 		</node>
 	</editor>
 	<console>
