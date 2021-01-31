@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharactorController : MonoBehaviour, IDamageable {
+
 
     [SerializeField] [Header("Referances")]
     private Camera playerCamera;
@@ -11,15 +13,34 @@ public class CharactorController : MonoBehaviour, IDamageable {
     private Transform body;
 
     [SerializeField]
+    private Transform projectileSpawnPoint;
+
+    [SerializeField]
+    private GameObject projectilePrefab;
+
+    [SerializeField]
     private Transform groundChecker;
 
     [SerializeField]
     private CharacterController controller;
 
+    [SerializeField]
+    Image spriteRenderer;
+
+    [SerializeField]
+    private Animator animator;
+
+
     [Header("Settings")]
     [SerializeField]
     private int maxHealth = 20;
     private int currentHealth = 20;
+
+    [SerializeField]
+    private float reloadTime = 3f;
+    private float gunReloadStartTime = -99f;
+    private bool gunEmpty = false;
+    private bool isReloading = false;
 
     [SerializeField][Range(100f, 3000f)]
     private float mouseSens = 1f;
@@ -42,9 +63,11 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField][Range(0f, 50f)]
     private float playerGravity = -9.81f; //Gravity const
+    private bool isOnGround = false;
 
     [SerializeField][Range(0f, 5f)][Tooltip("Distance to the ground before velocity becomes a constant. Set this to how far the groundChecker point is from the ground when the player is standing still")]
     float groundDist = 0.4f;
+
 
     [Header("Inputs (Some are in project inputs)")]
     [SerializeField]
@@ -58,10 +81,21 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField]
     private KeyCode switchWeaponKey = KeyCode.Alpha1;
+    private int selectedWeapon = 0; //0 fists, 1 sword, 2 gun
 
     public LayerMask groundMask;
 
-    private bool isOnGround = false;
+
+    [SerializeField][Header("Animations")]
+    private Sprite idleNoWeapon;
+
+    [SerializeField]
+    private Sprite idleSword;
+
+    [SerializeField]
+    private Sprite idleGun;
+
+    
 
     void Start() {
         currentHealth = maxHealth;
@@ -70,19 +104,52 @@ public class CharactorController : MonoBehaviour, IDamageable {
     }
     
     void Update() {
+        PhysicsChecks();
         CameraController();
         MovementControls();
-        PhysicsChecks();
         WeaponControls();
     }
 
     private void WeaponControls(){
-        if(Input.GetKeyDown(switchWeaponKey)){ //Switch weapon
 
+        if(gunEmpty && isReloading && Time.time - gunReloadStartTime > reloadTime){
+            gunEmpty = false;
+            isReloading = false;
+        }
+
+        if(Input.GetKeyDown(switchWeaponKey)){ //Switch weapon //0 fists, 1 sword, 2 gun
+            selectedWeapon = (selectedWeapon + 1) % 3; //Cycles the selected weapon
+
+            animator.SetInteger("Weapon Equipped", selectedWeapon);
         }
 
         if(Input.GetKeyDown(reloadKey)){ //Reload
+            if(gunEmpty){
+                animator.SetTrigger("Reload");
+                gunReloadStartTime = Time.time;
+                isReloading = true;
+            }
+        }
 
+        if(Input.GetMouseButtonDown(0)){ // Attack
+
+            if(selectedWeapon == 2){
+                print("Gun empty: " + gunEmpty);
+                if(!gunEmpty){
+                    
+                    gunEmpty = true;
+                    animator.SetTrigger("Attack");
+
+                    GameObject bullet = Instantiate(projectilePrefab);
+                    bullet.name = "Player Bullet (" + Time.time + ")";
+                    bullet.transform.position = projectileSpawnPoint.transform.position;
+                    bullet.transform.LookAt(projectileSpawnPoint.transform.forward);
+
+
+                }
+            }
+            
+            
         }
 
 
