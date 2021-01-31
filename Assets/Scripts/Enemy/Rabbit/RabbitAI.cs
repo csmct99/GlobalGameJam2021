@@ -45,6 +45,9 @@ public class RabbitAI : Enemy {
 	[SerializeField]
 	private AudioClip deathSound;
 
+	[SerializeField]
+	private AudioClip[] shootSounds;
+
 
 
 
@@ -91,11 +94,20 @@ public class RabbitAI : Enemy {
 				
 				isAiming = false;
 				lastAttackTime = Time.time;
-				print("Firing!");
+				//print("Firing!");
+
+				int index = Random.Range(0, shootSounds.Length);
+				print(index);
+
+				audioSource.clip = shootSounds[index];
+				audioSource.time = 0f;
+				audioSource.Play();
+
 				
+
 				spriteRenderer.sprite = idleSprite;
 				GameObject projectile = Instantiate(bulletPrefab);
-				projectile.name = "Bullet (" + Time.time + ")";
+				projectile.name = "Enemy Bullet (" + Time.time + ")";
 				projectile.transform.position = shootPosition.transform.position;
 				projectile.transform.LookAt(target.transform.position);
 			}

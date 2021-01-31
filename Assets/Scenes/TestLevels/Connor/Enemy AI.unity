@@ -7252,6 +7252,10 @@ PrefabInstance:
       value: 9999
       objectReference: {fileID: 0}
     - target: {fileID: 7929977914661660012, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
+      propertyPath: swordDamage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929977914661660012, guid: 3d8bab9cedaa59047805e132a3918c9b, type: 3}
       propertyPath: spriteRenderer
       value: 
       objectReference: {fileID: 1975547353}

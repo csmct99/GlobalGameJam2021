@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour, IDamageable {
 	[SerializeField]
 	protected AudioSource audioSource;
 
+	[SerializeField]
+	protected GameObject gibPrefab;
+
 	[SerializeField] [Header("AI Settings")]
 	protected float movementSpeed = 1f;
 
@@ -26,6 +29,12 @@ public class Enemy : MonoBehaviour, IDamageable {
 	protected float lastAttackTime = -999f;
 
 	[Header("Settings")]
+	[SerializeField] 
+	protected int numberOfGibsOnDeath = 4;
+
+	[SerializeField] 
+	protected float gibExplosiveForce = 100f;
+
 	[SerializeField]
 	protected int maxHealth = 10;
 	protected int health;
@@ -73,6 +82,13 @@ public class Enemy : MonoBehaviour, IDamageable {
 	protected virtual void Die(){
 		isDead = true;
 		isDeadFirst = false;
+
+		for(int i = 1; i <= numberOfGibsOnDeath; i++){
+			GameObject gib = Instantiate(gibPrefab);
+			gib.name = "gib " + i;
+			gib.transform.position = transform.position + transform.forward;
+			gib.GetComponent<Rigidbody>().AddExplosionForce(gibExplosiveForce, gameObject.transform.position, 3f, gibExplosiveForce/10, ForceMode.Impulse);
+		}
 	}
     
 }
