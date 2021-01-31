@@ -42,6 +42,17 @@ public class CharactorController : MonoBehaviour, IDamageable {
     private bool gunEmpty = false;
     private bool isReloading = false;
 
+    [SerializeField]
+    private int swordDamage = 2;
+
+
+    [SerializeField]
+    private float swordReach = 1f;
+
+    [SerializeField]
+    private float swordSwingTime = 0.3f;
+    private float lastSwingTime = -99f;
+
     [SerializeField][Range(100f, 3000f)]
     private float mouseSens = 1f;
 
@@ -124,7 +135,7 @@ public class CharactorController : MonoBehaviour, IDamageable {
         }
 
         if(Input.GetKeyDown(reloadKey)){ //Reload
-            if(gunEmpty){
+            if(gunEmpty && !isReloading){
                 animator.SetTrigger("Reload");
                 gunReloadStartTime = Time.time;
                 isReloading = true;
@@ -133,8 +144,17 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
         if(Input.GetMouseButtonDown(0)){ // Attack
 
-            if(selectedWeapon == 2){
-                print("Gun empty: " + gunEmpty);
+            if(selectedWeapon == 1){ //Sword
+                if(Time.time - lastSwingTime > swordSwingTime){
+                    animator.SetTrigger("Attack");
+                    lastSwingTime = Time.time;
+                    RaycastSweep();
+
+
+                }
+            }
+
+            if(selectedWeapon == 2){ //Gun
                 if(!gunEmpty){
                     
                     gunEmpty = true;
@@ -143,7 +163,7 @@ public class CharactorController : MonoBehaviour, IDamageable {
                     GameObject bullet = Instantiate(projectilePrefab);
                     bullet.name = "Player Bullet (" + Time.time + ")";
                     bullet.transform.position = projectileSpawnPoint.transform.position;
-                    bullet.transform.LookAt(projectileSpawnPoint.transform.forward);
+                    bullet.transform.LookAt(projectileSpawnPoint.transform.position + projectileSpawnPoint.transform.forward);
 
 
                 }
@@ -153,6 +173,39 @@ public class CharactorController : MonoBehaviour, IDamageable {
         }
 
 
+    }
+
+    private void RaycastSweep() {
+        Vector3 startPos = projectileSpawnPoint.position;
+        Vector3 targetPos = Vector3.zero; // variable for calculated end position
+
+        int startAngle = (int)( -80 * 0.5 ); // half the angle to the Left of the forward
+        int finishAngle = (int)( 80 * 0.5 ); // half the angle to the Right of the forward
+
+        // the gap between each ray (increment)
+        int inc  = (int)( 80 / 10 );
+
+        RaycastHit hit;
+
+        // step through and find each target point
+        for ( int i = startAngle; i < finishAngle; i += inc ) {
+            targetPos = (Quaternion.Euler( 0, i, 0 ) * projectileSpawnPoint.transform.forward ).normalized * swordReach;  
+
+            // linecast between points
+            if ( Physics.Raycast( startPos, targetPos, out hit ) ) { //if his a target
+                IDamageable d = hit.collider.gameObject.GetComponent<IDamageable>();
+
+                if(d != null){
+                    Debug.Log( "Hit " + hit.collider.gameObject.name );
+                    d.TakeDamage(swordDamage);
+                }
+                
+
+            }    
+
+            // to show ray just for testing
+            Debug.DrawLine( startPos, startPos + targetPos, Color.green, 40f );    
+        }   
     }
 
     /// <summary>

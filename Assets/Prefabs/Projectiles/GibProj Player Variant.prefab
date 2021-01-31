@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6781678320964301244, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
       propertyPath: m_Name
-      value: GibProjectile
+      value: GibProj Player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6781678320964301246, guid: 520db2954fa815141bc9649f6c3a8a67, type: 3}
       propertyPath: speed
