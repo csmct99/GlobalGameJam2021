@@ -20,16 +20,16 @@ public class MovementIncrease : ItemBase
     protected override void ItemEquip()
     {
 		base.ItemEquip();
-		//TODO player.currentSpeed += movementIncrease;
-		
+		player.SetMovementSpeed(player.GetMovementSpeed() + movementIncrease);
+		player.SetSprintingSpeed(player.GetSprintingSpeed() + movementIncrease);
      
     }
 
     protected override void ItemUnequip()
     {
 		base.ItemEquip();
-		//TODO player.currentSpeed -= movementIncrease;
-		
+		player.SetMovementSpeed(player.GetMovementSpeed() - movementIncrease);
+		player.SetSprintingSpeed(player.GetSprintingSpeed() - movementIncrease);
     
     }
 }

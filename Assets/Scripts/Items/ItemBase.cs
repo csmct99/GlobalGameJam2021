@@ -8,7 +8,8 @@ public class ItemBase : MonoBehaviour
 	protected bool isEquipped;
 	protected string itemName;
 
-	//TODO private DrewsPlayerClass player;
+	public CharactorController player;
+	
 	//[SerializeField]
 	//public PhysicalTrigger physicalTrigger;
 

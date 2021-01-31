@@ -20,7 +20,7 @@ public class DamageIncrease : ItemBase
     protected override void ItemEquip()
     {
 		base.ItemEquip();
-		//TODO player.attack += attackIncrease;
+		player.SetSwordDamage(player.GetSwordDamage() + attackIncrease);
 		
      
     }
@@ -28,7 +28,7 @@ public class DamageIncrease : ItemBase
     protected override void ItemUnequip()
     {
 		base.ItemEquip();
-		//TODO player.attack -= attackIncrease;
+		player.SetSwordDamage(player.GetSwordDamage() - attackIncrease);
 		
     
     }
