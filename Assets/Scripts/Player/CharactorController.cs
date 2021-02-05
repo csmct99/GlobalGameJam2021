@@ -39,8 +39,24 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [Header("Settings")]
     [SerializeField]
-    private int maxHealth = 20;
     private int currentHealth = 20;
+    private int maxHealth;
+    public int GetMaxHealth(){
+        return maxHealth;
+    }
+        
+    public void SetMaxHealth(int maxHP){
+        maxHealth = maxHP;
+    }
+
+    public int GetCurrentHealth(){
+        return currentHealth;
+    }
+
+    public void SetCurrentHealth(int currentHP){
+        currentHealth = currentHP;
+    }
+   
 
     [SerializeField]
     private float reloadTime = 3f;
@@ -50,6 +66,14 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField]
     private int swordDamage = 2;
+    
+    public int GetSwordDamage(){
+        return swordDamage;
+    }
+
+    public void SetSwordDamage(int damage){
+        swordDamage = damage;
+    }
 
     [SerializeField]
     private float swordReach = 1f;
@@ -64,8 +88,24 @@ public class CharactorController : MonoBehaviour, IDamageable {
     [SerializeField][Range(1f, 40f)]
     private float movementSpeed = 12f;
 
+    public float GetMovementSpeed(){
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float mSpeed){
+        movementSpeed = mSpeed;
+    }
+
     [SerializeField][Range(1f, 40f)]
     private float sprintAdditionalSpeed = 6f;
+
+    public float GetSprintingSpeed(){
+        return sprintAdditionalSpeed;
+    }
+
+    public void SetSprintingSpeed(float sprintSpeed){
+        sprintAdditionalSpeed = sprintSpeed;
+    }
 
     [SerializeField][Range(0f, 10f)][Tooltip("How high you jump in meters")]
     private float jumpHeight = 3f;
