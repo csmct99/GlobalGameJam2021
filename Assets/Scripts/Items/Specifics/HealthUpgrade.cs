@@ -20,16 +20,16 @@ public class HealthUpgrade : ItemBase {
     protected override void ItemEquip()
     {
 		base.ItemEquip();
-		//TODO player.getCurrentHP += healthIncrease;
-		//TODO player.getMaxHP += healthIncrease;
+		player.SetCurrentHealth(player.GetCurrentHealth() + healthIncrease);
+	    player.SetMaxHealth(player.GetMaxHealth() + healthIncrease);
      
     }
 
     protected override void ItemUnequip()
     {
 		base.ItemEquip();
-		//TODO player.getCurrentHP -= healthIncrease;
-		//TODO player.getMaxHP -= healthIncrease;
+		player.SetCurrentHealth(player.GetCurrentHealth() - healthIncrease);
+	    player.SetMaxHealth(player.GetMaxHealth() - healthIncrease);
     
     }
 
