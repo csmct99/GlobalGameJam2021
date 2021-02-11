@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject itemSpawnPrefab;
     private static GameManager instance = null;
     public static GameManager Instance { get { return instance; } } // public static property that gets the instance.
 
@@ -55,8 +57,41 @@ public class GameManager : MonoBehaviour
         //Drop items in level
         DroppedItemsInLevel(itemsDropped);
     }
-    void DroppedItemsInLevel(List<ItemBase> itemsDropped)
-    {
 
+    private void DroppedItemsInLevel(List<ItemBase> itemsDropped)
+    {
+        GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
+        List<GameObject> itemSpawnPoints = new List<GameObject>();
+        //Find all the scene's spawn points
+        foreach (GameObject obj in allObjects)
+        {
+            if(obj.GetComponent<ItemSpawnPoint>() != null){
+                itemSpawnPoints.Add(obj);
+            }
+        }
+
+        //Place an item in those spots
+        foreach (ItemBase droppedItem in itemsDropped)
+        {
+            //m_CurrentWave = waves [Random.Range(0, waves.Count)];
+            int RandomlyChosenSpawn = Random.Range(0, itemSpawnPoints.Count);
+
+            Vector3 spawnLocation = itemSpawnPoints[RandomlyChosenSpawn].transform.position;
+            itemSpawnPoints.RemoveAt(RandomlyChosenSpawn);
+
+            //TODO; Feed droppedItem into itemSpawnPrefab
+            Instantiate(itemSpawnPrefab, spawnLocation, Quaternion.identity);
+        }
+        //TODO; Add more items to spawnable items. 
+
+    }
+
+    public void EndLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (SceneManager.sceneCount > nextSceneIndex)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
     }
 }

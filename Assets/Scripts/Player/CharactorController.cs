@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharactorController : MonoBehaviour, IDamageable {
 
@@ -35,6 +36,9 @@ public class CharactorController : MonoBehaviour, IDamageable {
 
     [SerializeField]
     private AudioSource audioSource;
+
+    [SerializeField]
+    private int InventoryMaxSize = 5;
 
 
     [Header("Settings")]
@@ -346,4 +350,14 @@ public class CharactorController : MonoBehaviour, IDamageable {
             Destroy(gameObject);
         }
     }
+
+    private void CheckInventorySize(){
+        if(inventory.Count >= InventoryMaxSize)
+        {
+            //Game Manager EndLevel();
+        }
+
+    }
+
+
 }
